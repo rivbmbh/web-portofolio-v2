@@ -1,0 +1,9 @@
+@import "tailwindcss";
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap");
+@theme {
+  --font-roboto-flex: "Roboto+Flex", sans-serif;
+}
+@custom-variant dark (&:where(.dark, .dark *));
+
+@config "../../tailwind.config.js";
