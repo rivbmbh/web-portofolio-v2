@@ -12,16 +12,18 @@ const Header = () => {
 
   return (
     <>
-      <header className={`sticky top-0 z-50 dark:bg-amber-600`}>
+      <header className={`sticky top-0 z-50 bg-transparent`}>
         <div
-          className={`flex justify-between items-center px-8 py-4 md:py-5 font-roboto-flex`}
+          className={`flex justify-between items-center py-4 md:py-5 font-roboto-flex`}
         >
-          <div className={`text-3xl font-bold text-white`}>
+          <div className={`text-3xl font-bold text-emerald-800`}>
             <span>LOGO</span>
           </div>
 
           {/* nav dekstop */}
-          <nav className={`hidden md:flex justify-center gap-8 text-sm`}>
+          <nav
+            className={`hidden md:flex justify-center gap-8 text-sm text-white`}
+          >
             <a href="#" className={`hover:underline`}>
               Home
             </a>
@@ -37,7 +39,7 @@ const Header = () => {
           </nav>
 
           {/* mobile screen */}
-          <div className={`md:hidden relative`}>
+          <div className={`md:hidden relative mt-1`}>
             {/* hamburger button (mobile) */}
             <button onClick={handleOpenNavMenu}>
               <span
