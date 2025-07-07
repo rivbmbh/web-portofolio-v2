@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { hamburgerLine } from "../../../js";
+import { hamburgerLine } from "../../../js/style";
 import { motion, AnimatePresence } from "framer-motion";
 // import { motion } from "motion";
 
@@ -14,15 +14,15 @@ const Header = () => {
     <>
       <header className={`sticky top-0 z-50 bg-transparent`}>
         <div
-          className={`flex justify-between items-center py-4 md:py-5 font-roboto-flex`}
+          className={`flex justify-between items-center py-4 md:py-5 font-pixel`}
         >
-          <div className={`text-3xl font-bold text-emerald-800`}>
+          <div className={`text-4xl font-bold text-emerald-800`}>
             <span>LOGO</span>
           </div>
 
           {/* nav dekstop */}
           <nav
-            className={`hidden md:flex justify-center gap-8 text-sm text-white`}
+            className={`hidden md:flex justify-center gap-8 text-lg text-white`}
           >
             <a href="#" className={`hover:underline`}>
               Home
@@ -39,7 +39,7 @@ const Header = () => {
           </nav>
 
           {/* mobile screen */}
-          <div className={`md:hidden relative mt-1`}>
+          <div className={`md:hidden relative mt-1 mt:mt-0`}>
             {/* hamburger button (mobile) */}
             <button onClick={handleOpenNavMenu}>
               <span
@@ -68,7 +68,7 @@ const Header = () => {
                   animate={{ opacity: 1, scale: 1, y: 0 }}
                   exit={{ opacity: 0, scale: 0.95, y: -10 }}
                   transition={{ duration: 0.2 }}
-                  className={`bg-amber-200 absolute right-1 top-10 flex flex-col gap-5 w-36 p-5 text-sm rounded-md shadow`}
+                  className={`bg-amber-200 absolute right-1 top-10 flex flex-col gap-4 w-36 p-5 text-lg rounded-md shadow`}
                 >
                   <a href="#" className={`hover:underline`}>
                     Home

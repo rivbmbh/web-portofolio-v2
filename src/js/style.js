@@ -5,11 +5,10 @@ const hamburgerLine = tv({
     "transition",
     "duration-300",
     "ease-in-out",
-    "w-[30px]",
-    "h-[3px]",
+    "w-[31px]",
+    "h-[2.5px]",
     "my-2",
     "block",
-    "bg-zinc-950",
     "dark:bg-white",
   ],
 });
