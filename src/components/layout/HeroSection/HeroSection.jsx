@@ -1,4 +1,4 @@
-const LandingPage = () => {
+const HeroSection = () => {
   return (
     <>
       <section>
@@ -10,4 +10,4 @@ const LandingPage = () => {
   );
 };
 
-export default LandingPage;
+export default HeroSection;
