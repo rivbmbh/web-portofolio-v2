@@ -97,7 +97,7 @@ const HeroSection = () => {
               <ButtonConnect
                 url="#"
                 name="Let's Connect"
-                hover={`active:scale-105 active:-rotate-3 transition-all ease-in-out duration-200 hover:bg-emerald-700`}
+                effect={`active:scale-105 active:-rotate-3 transition-all ease-in-out duration-200 active:bg-emerald-700 hover:bg-emerald-700`}
               />
             </div>
             {/* account social media */}
