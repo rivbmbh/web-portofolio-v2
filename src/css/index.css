@@ -4,6 +4,7 @@
 @import "tailwindcss";
 
 @theme {
+  --breakpoint-xs: 20rem;
   --font-roboto-flex: "Roboto Flex", sans-serif;
   --font-pixel: "VT323", monospace;
   --color-primay: ;

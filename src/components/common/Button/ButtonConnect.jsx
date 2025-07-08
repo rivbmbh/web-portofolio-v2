@@ -1,4 +1,4 @@
-import { faHandPointRight } from "@fortawesome/free-solid-svg-icons";
+// import { faHandPointRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const ButtonConnect = ({ url, name, hover }) => {

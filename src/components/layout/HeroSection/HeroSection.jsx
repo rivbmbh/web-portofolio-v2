@@ -1,22 +1,34 @@
-// import {
-//   faFacebook,
-//   faGithub,
-//   faInstagram,
-//   faXTwitter,
-// } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { motion, AnimatePresence } from "framer-motion";
 import { TypeAnimation } from "react-type-animation";
 // import { iconSosmed } from "../../../js/style";
 import { faHandPointRight } from "@fortawesome/free-solid-svg-icons";
 import ButtonConnect from "../../common/Button/";
+import { useEffect, useState } from "react";
 
 const HeroSection = () => {
+  const [isSmallScreen, setIsSmallScreen] = useState(false);
+
+  useEffect(() => {
+    const checkWidthScreen = () => {
+      setIsSmallScreen(window.innerWidth <= 230);
+    };
+
+    //check load, menjalankan fungsi langsung saat komponen pertama kali dirender,
+    checkWidthScreen();
+
+    //resize, setiap kali pengguna mengubah ukuran jendela (resize), checkScreen dijalankan ulang
+    window.addEventListener("resize", checkWidthScreen);
+
+    // Menghapus event listener ketika tidak digunakan agar tidak membebani memori atau menyebabkan bug
+    return () => window.removeEventListener("resize", checkWidthScreen);
+  }, []);
+
   return (
     <>
       <section className="w-full text-white pb-44 font-pixel">
-        <div className="flex justify-between gap-10 mt-10">
-          <div className="w-1/2">
+        <div className="flex flex-col gap-10 mt-10 md:flex-row md:justify-between">
+          <div className="w-full md:w-1/2">
             {/* floting chat */}
             <motion.div
               animate={{ y: [0, -10, 0] }}
@@ -36,9 +48,12 @@ const HeroSection = () => {
               <p className="text-base">It's me</p>
             </motion.div>
             {/* introduce */}
-            <div className="my-2 text-5xl font-bold w-max">
+            <div className="w-full my-4 text-5xl font-bold xs:my-2">
               <p>Rivaldo</p>
-              <p className="text-end">Angelo Bomboah</p>
+              <div className="items-center xs:text-end xs:flex xs:gap-4">
+                <p>Angelo </p>
+                <p>Bomboah</p>
+              </div>
             </div>
             {/* profesion */}
             <div>
@@ -57,13 +72,17 @@ const HeroSection = () => {
                 wrapper="span"
                 cursor={true}
                 repeat={Infinity}
-                className="text-2xl font-bold text-amber-300"
+                className="text-xl font-bold md:text-2xl text-amber-300"
               />
             </div>
 
-            <div className="flex items-center w-1/2 gap-4 mt-8">
+            <div className="flex flex-wrap w-full gap-5 mt-10 ">
               <motion.div
-                animate={{ x: [0, 10, 0, 0] }} // gerakan maju mundur
+                animate={
+                  isSmallScreen
+                    ? { y: [0, 10, 0] } // jika layar kecil, gerakan vertikal
+                    : { x: [0, 10, 0] } // jika normal, gerakan horizontal
+                }
                 transition={{
                   duration: 1.8, // durasi satu siklus
                   repeat: Infinity, // loop terus-menerus
@@ -72,13 +91,13 @@ const HeroSection = () => {
               >
                 <FontAwesomeIcon
                   icon={faHandPointRight}
-                  className="text-xl text-orange-200 "
+                  className="text-xl text-orange-200 max-[230px]:rotate-90"
                 />
               </motion.div>
               <ButtonConnect
                 url="#"
                 name="Let's Connect"
-                hover={`active:scale-105 active:-rotate-3 transition-all ease-in-out duration-200  hover:bg-emerald-700`}
+                hover={`active:scale-105 active:-rotate-3 transition-all ease-in-out duration-200 hover:bg-emerald-700`}
               />
             </div>
             {/* account social media */}

@@ -5,7 +5,7 @@ import App from "./App.jsx";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <div className="container px-8 mx-auto">
+    <div className="px-8 mx-auto sm:px-4 sm:container md:px-8">
       <App />
     </div>
   </StrictMode>
