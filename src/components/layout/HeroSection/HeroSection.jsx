@@ -4,6 +4,7 @@ import Profession from "./Profession";
 import Introduce from "./Introduce";
 import FloatingMessage from "./FloatingMessage";
 import HandPoint from "./HandPoint";
+import Avatar from "./Avatar";
 
 const HeroSection = () => {
   const [isSmallScreen, setIsSmallScreen] = useState(false);
@@ -25,15 +26,15 @@ const HeroSection = () => {
 
   return (
     <>
-      <section className="w-full text-white pb-44 font-pixel">
-        <div className="flex flex-col gap-10 mt-10 md:flex-row md:justify-between">
-          <div className="w-full md:w-1/2">
+      <section className="w-full text-white pb-14 font-pixel">
+        <div className="flex flex-col-reverse items-center justify-center gap-10 mt-10 sm:flex-row sm:justify-between">
+          <div className="w-full px-8 sm:px-0 sm:w-1/2">
             {/* floting chat */}
             <FloatingMessage />
             <Introduce />
             <Profession />
 
-            <div className="flex flex-wrap w-full gap-5 mt-10 ">
+            <div className="flex flex-wrap w-full gap-5 mt-14 ">
               <HandPoint isSmallScreen={isSmallScreen} />
               <ButtonConnect
                 url="#"
@@ -86,9 +87,7 @@ const HeroSection = () => {
           </div>
 
           {/* my avatar */}
-          <div>
-            <h1>Avatar</h1>
-          </div>
+          <Avatar />
         </div>
       </section>
     </>

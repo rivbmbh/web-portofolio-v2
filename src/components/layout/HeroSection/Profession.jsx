@@ -2,7 +2,7 @@ import { TypeAnimation } from "react-type-animation";
 
 const Profession = () => {
   return (
-    <div>
+    <div className="mt-5">
       <p className="text-base">I'm a...</p>
       <TypeAnimation
         sequence={[
