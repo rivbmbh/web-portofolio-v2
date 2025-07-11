@@ -1,10 +1,9 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { motion, AnimatePresence } from "framer-motion";
-import { TypeAnimation } from "react-type-animation";
-// import { iconSosmed } from "../../../js/style";
-import { faHandPointRight } from "@fortawesome/free-solid-svg-icons";
 import ButtonConnect from "../../common/Button/";
 import { useEffect, useState } from "react";
+import Profession from "./Profession";
+import Introduce from "./Introduce";
+import FloatingMessage from "./FloatingMessage";
+import HandPoint from "./HandPoint";
 
 const HeroSection = () => {
   const [isSmallScreen, setIsSmallScreen] = useState(false);
@@ -30,70 +29,12 @@ const HeroSection = () => {
         <div className="flex flex-col gap-10 mt-10 md:flex-row md:justify-between">
           <div className="w-full md:w-1/2">
             {/* floting chat */}
-            <motion.div
-              animate={{ y: [0, -10, 0] }}
-              transition={{
-                duration: 3,
-                repeat: Infinity,
-                ease: "easeInOut",
-              }}
-              className="flex items-center justify-center text-base mb-3 bg-gray-400 py-1.5 px-2 rounded-sm relative w-max -rotate-12"
-            >
-              <div
-                className="absolute right-2 -bottom-1.5 w-0 h-0 
-            border-l-[9px] border-r-[9px] border-t-[9px] 
-            border-l-transparent border-r-transparent 
-            border-t-gray-400"
-              ></div>
-              <p className="text-base">It's me</p>
-            </motion.div>
-            {/* introduce */}
-            <div className="w-full my-4 text-5xl font-bold xs:my-2">
-              <p>Rivaldo</p>
-              <div className="items-center xs:text-end xs:flex xs:gap-4">
-                <p>Angelo </p>
-                <p>Bomboah</p>
-              </div>
-            </div>
-            {/* profesion */}
-            <div>
-              <p className="text-base">I'm a...</p>
-              <TypeAnimation
-                sequence={[
-                  "Web Devoloper", // Word 'One'
-                  1000, // Waits 1s
-                  "Graphic Design", // Word two
-                  1500,
-                  "and",
-                  700,
-                  "Digital Cartographer.",
-                  1500,
-                ]}
-                wrapper="span"
-                cursor={true}
-                repeat={Infinity}
-                className="text-xl font-bold md:text-2xl text-amber-300"
-              />
-            </div>
+            <FloatingMessage />
+            <Introduce />
+            <Profession />
 
             <div className="flex flex-wrap w-full gap-5 mt-10 ">
-              <motion.div
-                animate={
-                  isSmallScreen
-                    ? { y: [0, 10, 0] } // jika layar kecil, gerakan vertikal
-                    : { x: [0, 10, 0] } // jika normal, gerakan horizontal
-                }
-                transition={{
-                  duration: 1.8, // durasi satu siklus
-                  repeat: Infinity, // loop terus-menerus
-                  ease: "easeInOut",
-                }}
-              >
-                <FontAwesomeIcon
-                  icon={faHandPointRight}
-                  className="text-xl text-orange-200 max-[230px]:rotate-90"
-                />
-              </motion.div>
+              <HandPoint isSmallScreen={isSmallScreen} />
               <ButtonConnect
                 url="#"
                 name="Let's Connect"
