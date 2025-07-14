@@ -18,7 +18,7 @@ const Profession = () => {
         wrapper="span"
         cursor={true}
         repeat={Infinity}
-        className="text-xl font-bold md:text-2xl text-amber-300"
+        className="text-xl font-bold md:text-2xl text-gold"
       />
     </div>
   );
