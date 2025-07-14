@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { hamburgerLine } from "../../../js/style";
 import { motion, AnimatePresence } from "framer-motion";
+import ButtonResume from "../../common/Button/ButtonResume";
 // import { motion } from "motion";
 
 const Header = () => {
@@ -17,12 +18,14 @@ const Header = () => {
           className={`flex justify-between items-center py-4 md:py-5 font-pixel`}
         >
           <div className={`text-4xl font-bold text-emerald-800`}>
-            <span>LOGO</span>
+            <a href="#" className="block">
+              RAB
+            </a>
           </div>
 
           {/* nav dekstop */}
           <nav
-            className={`hidden md:flex justify-center gap-8 text-lg text-white`}
+            className={`hidden md:flex justify-center items-center gap-8 text-md text-white`}
           >
             <a href="#" className={`hover:underline`}>
               Home
@@ -36,6 +39,7 @@ const Header = () => {
             <a href="#" className={`hover:underline`}>
               Contact
             </a>
+            <ButtonResume name="Resume" />
           </nav>
 
           {/* mobile screen */}
@@ -68,7 +72,7 @@ const Header = () => {
                   animate={{ opacity: 1, scale: 1, y: 0 }}
                   exit={{ opacity: 0, scale: 0.95, y: -10 }}
                   transition={{ duration: 0.2 }}
-                  className={`bg-amber-200 absolute right-1 top-10 flex flex-col gap-4 w-36 p-5 text-lg rounded-md shadow`}
+                  className={`bg-white/40 backdrop-blur-sm absolute right-1 top-10 flex flex-col gap-4 w-44 p-6 items-stretch text-md rounded-md shadow`}
                 >
                   <a href="#" className={`hover:underline`}>
                     Home
@@ -82,6 +86,8 @@ const Header = () => {
                   <a href="#" className={`hover:underline`}>
                     Contact
                   </a>
+                  <div className="w-full max-w-full border-b border-gray-600"></div>
+                  <ButtonResume name="Resume" />
                 </motion.nav>
               )}
             </AnimatePresence>
