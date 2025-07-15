@@ -2,7 +2,6 @@ import { useState } from "react";
 import { hamburgerLine } from "../../../js/style";
 import { motion, AnimatePresence } from "framer-motion";
 import ButtonResume from "../../common/Button/ButtonResume";
-import { defaultLayoutPlugin } from "@react-pdf-viewer/default-layout";
 import { Viewer, Worker } from "@react-pdf-viewer/core";
 // import { motion } from "motion";
 

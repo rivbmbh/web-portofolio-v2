@@ -1,4 +1,4 @@
-import ButtonConnect from "../../common/Button/";
+import ButtonConnect from "../../common/Button/ButtonConnect";
 import { useEffect, useState } from "react";
 import Profession from "./Profession";
 import Introduce from "./Introduce";
