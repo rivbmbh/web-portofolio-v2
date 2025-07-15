@@ -2,9 +2,11 @@ import { useState } from "react";
 import { hamburgerLine } from "../../../js/style";
 import { motion, AnimatePresence } from "framer-motion";
 import ButtonResume from "../../common/Button/ButtonResume";
+import { defaultLayoutPlugin } from "@react-pdf-viewer/default-layout";
+import { Viewer, Worker } from "@react-pdf-viewer/core";
 // import { motion } from "motion";
 
-const Header = () => {
+const Header = ({ isOpenResume, setIsOpenResume }) => {
   const [isOpenNavMenu, setIsOpenNavMenu] = useState(false);
 
   function handleOpenNavMenu() {
@@ -39,7 +41,10 @@ const Header = () => {
             <a href="#" className={`hover:underline`}>
               Contact
             </a>
-            <ButtonResume name="Resume" />
+            <ButtonResume
+              name="Resume"
+              onClick={() => setIsOpenResume(!isOpenResume)}
+            />
           </nav>
 
           {/* mobile screen */}
@@ -87,7 +92,10 @@ const Header = () => {
                     Contact
                   </a>
                   <div className="w-full max-w-full border-b border-gray-600"></div>
-                  <ButtonResume name="Resume" />
+                  <ButtonResume
+                    name="Resume"
+                    onClick={() => setIsOpenResume(!isOpenResume)}
+                  />
                 </motion.nav>
               )}
             </AnimatePresence>
