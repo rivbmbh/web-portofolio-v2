@@ -4,6 +4,7 @@ import HeroSection from "./components/layout/HeroSection";
 import { useState } from "react";
 // import { defaultLayoutPlugin } from "@react-pdf-viewer/default-layout";
 import ViewResume from "./components/common/Modal/ViewResume";
+import Skills from "./components/layout/Skills/Skills";
 
 function App() {
   const [isOpenResume, setIsOpenResume] = useState(false);
@@ -20,7 +21,9 @@ function App() {
           setIsOpenResume={setIsOpenResume}
         />
       )}
+
       <HeroSection />
+      <Skills />
     </>
   );
 }

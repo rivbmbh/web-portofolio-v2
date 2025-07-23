@@ -31,7 +31,7 @@ const Header = ({ isOpenResume, setIsOpenResume }) => {
             <a href="#" className={`hover:underline`}>
               Home
             </a>
-            <a href="#" className={`hover:underline`}>
+            <a href="#skills" className={`hover:underline`}>
               Skills
             </a>
             <a href="#" className={`hover:underline`}>
