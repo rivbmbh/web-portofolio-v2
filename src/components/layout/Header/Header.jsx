@@ -2,7 +2,7 @@ import { useState } from "react";
 import { hamburgerLine } from "../../../js/style";
 import { motion, AnimatePresence } from "framer-motion";
 import ButtonResume from "../../common/Button/ButtonResume";
-import { Viewer, Worker } from "@react-pdf-viewer/core";
+
 // import { motion } from "motion";
 
 const Header = ({ isOpenResume, setIsOpenResume }) => {

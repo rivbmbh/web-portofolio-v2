@@ -50,30 +50,9 @@ const Cursor = () => {
     };
 
     window.addEventListener("mousemove", moveCursor);
-    // const imgs = document.querySelectorAll("img");
-    // const buttons = document.querySelectorAll("button");
-    // const anchors = document.querySelectorAll("a");
-    // imgs.forEach((img) => {
-    //   img.addEventListener("mouseenter", enlargeCursor);
-    //   img.addEventListener("mouseleave", shrinkCursor);
-    // });
-
-    // buttons.forEach((btn) => {
-    //   btn.addEventListener("mouseenter", enlargeCursor);
-    //   btn.addEventListener("mouseleave", shrinkCursor);
-    // });
-
-    // anchors.forEach((a) => {
-    //   a.addEventListener("mouseenter", enlargeCursor);
-    //   a.addEventListener("mouseleave", shrinkCursor);
-    // });
 
     return () => {
       window.removeEventListener("mousemove", moveCursor);
-      //   imgs.forEach((img) => {
-      //     img.removeEventListener("mouseenter", enlargeCursor);
-      //     img.removeEventListener("mouseleave", shrinkCursor);
-      //   });
     };
   });
 
