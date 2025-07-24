@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { preview } from "vite";
+// import { preview } from "vite";
 
 const Avatar = () => {
   const [isView, setIsView] = useState(false);
