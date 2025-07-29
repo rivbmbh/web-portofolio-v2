@@ -1,5 +1,6 @@
 import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
+import { useImageFullView } from "../../common/Modal/ImageFullViewContext";
 
 const SkillCircle = ({
   percent,
@@ -9,6 +10,7 @@ const SkillCircle = ({
 }) => {
   const circleRef = useRef(null);
   const offset = 100 - percent;
+  const { openImage } = useImageFullView();
 
   useEffect(() => {
     gsap.fromTo(
@@ -54,7 +56,12 @@ const SkillCircle = ({
         />
       </svg>
       <div className="absolute  w-[74%] h-[74%] overflow-hidden rounded-full">
-        <img src={imgSrc} alt="icon" className="object-contain" />
+        <img
+          src={imgSrc}
+          alt="icon"
+          className="object-contain"
+          onClick={() => openImage(imgSrc)}
+        />
       </div>
     </div>
   );
