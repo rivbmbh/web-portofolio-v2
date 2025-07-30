@@ -7,7 +7,7 @@ import Cursor from "./components/common/Cursor/";
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     <Cursor />
-    <div className="relative px-8 mx-auto overflow-x-hidden sm:px-4 sm:container md:px-8">
+    <div className="relative px-8 mx-auto sm:px-4 sm:container md:px-8">
       <App />
     </div>
   </StrictMode>
