@@ -6,7 +6,7 @@ const ButtonConnect = ({ url, name, effect }) => {
     <>
       <a
         href={url}
-        className={`block py-2.5 px-5 border-2 border-emerald-800 rounded-sm w-max ${effect}`}
+        className={`block py-2.5 px-5 border-2 border-emerald-800 rounded-xs w-max ${effect}`}
       >
         {name}
       </a>
