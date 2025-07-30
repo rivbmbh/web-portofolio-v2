@@ -20,8 +20,8 @@ const SkillCircle = ({
       { strokeDashoffset: 100 },
       {
         strokeDashoffset: offset,
-        duration: 5,
-        ease: "power2.out",
+        duration: 3,
+        ease: "power.inOut(2.7)",
       }
     );
   }, [start, offset]);
