@@ -7,6 +7,7 @@ import Skills from "./components/layout/Skills/Skills";
 import { ImageFullViewProvider } from "./components/common/Modal/ImageFullViewContext";
 import ImageFullView from "./components/common/Modal/ImageFullView";
 import { ScrollTriggerProvider } from "./components/common/Scroll/ScrollTriggerContext";
+import Footer from "./components/layout/Footer";
 
 function App() {
   const [isOpenResume, setIsOpenResume] = useState(false);
@@ -30,6 +31,10 @@ function App() {
 
           <HeroSection />
           <Skills />
+          <Footer
+            isOpenResume={isOpenResume}
+            setIsOpenResume={setIsOpenResume}
+          />
           <ImageFullView />
         </ImageFullViewProvider>
       </ScrollTriggerProvider>
