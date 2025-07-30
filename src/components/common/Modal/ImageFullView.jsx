@@ -2,13 +2,13 @@
 import { useImageFullView } from "./ImageFullViewContext";
 
 export default function ImageFullView() {
-  const { viewingImage, closeImage } = useImageFullView();
+  const { viewingImage, caption, closeImage } = useImageFullView();
 
   if (!viewingImage) return null;
 
   return (
     <div
-      className="fixed inset-0 z-50 flex items-center justify-center bg-black/70"
+      className="fixed inset-0 z-50 flex flex-col items-center justify-center h-screen p-8 text-white bg-black/70 font-pixel"
       onClick={closeImage}
     >
       <img
@@ -16,6 +16,11 @@ export default function ImageFullView() {
         alt="Zoomed"
         className="max-w-[90%] max-h-[90%] rounded shadow-xl"
       />
+      <h2 className="mt-3 text-2xl font-semibold text-center">{caption}</h2>
+
+      <p className="w-full mt-5 text-sm text-center">
+        * Click the image to exit full view.
+      </p>
     </div>
   );
 }

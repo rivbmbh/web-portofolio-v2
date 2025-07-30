@@ -6,6 +6,7 @@ const SkillCircle = ({
   start,
   percent,
   imgSrc,
+  caption = "",
   strokeColor = "text-gray-500",
   gridStartPosition = "",
 }) => {
@@ -62,7 +63,7 @@ const SkillCircle = ({
           src={imgSrc}
           alt="icon"
           className="object-contain"
-          onClick={() => openImage(imgSrc)}
+          onClick={() => openImage(imgSrc, caption)}
         />
       </div>
     </div>
