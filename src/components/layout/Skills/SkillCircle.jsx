@@ -3,9 +3,10 @@ import { gsap } from "gsap";
 import { useImageFullView } from "../../common/Modal/ImageFullViewContext";
 
 const SkillCircle = ({
+  start,
   percent,
   imgSrc,
-  strokeColor = "text-gray-700",
+  strokeColor = "text-gray-500",
   gridStartPosition = "",
 }) => {
   const circleRef = useRef(null);
@@ -13,16 +14,17 @@ const SkillCircle = ({
   const { openImage } = useImageFullView();
 
   useEffect(() => {
+    if (!start) return;
     gsap.fromTo(
       circleRef.current,
       { strokeDashoffset: 100 },
       {
         strokeDashoffset: offset,
-        duration: 2,
+        duration: 5,
         ease: "power2.out",
       }
     );
-  }, [offset]);
+  }, [start, offset]);
 
   return (
     <div
@@ -55,7 +57,7 @@ const SkillCircle = ({
           strokeDashoffset="100"
         />
       </svg>
-      <div className="absolute  w-[74%] h-[74%] overflow-hidden rounded-full">
+      <div className="absolute w-[74%] h-[74%] overflow-hidden rounded-full">
         <img
           src={imgSrc}
           alt="icon"
