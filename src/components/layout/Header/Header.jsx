@@ -16,7 +16,7 @@ const Header = ({ isOpenResume, setIsOpenResume }) => {
   return (
     <>
       <header
-        className={`sticky max-w-full w-full top-0 z-50 bg-gray-700/50 backdrop-blur-sm px-4`}
+        className={`sticky max-w-full w-full top-0 z-50 bg-gray-700/50 backdrop-blur-sm px-6`}
       >
         <div
           className={`flex justify-between items-center py-4 md:py-5 font-pixel `}
