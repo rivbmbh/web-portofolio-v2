@@ -22,7 +22,6 @@ function App() {
               isOpenResume={isOpenResume}
               setIsOpenResume={setIsOpenResume}
             />
-            <ImageFullView />
 
             {/* Resume */}
             {isOpenResume && (
@@ -38,6 +37,7 @@ function App() {
               isOpenResume={isOpenResume}
               setIsOpenResume={setIsOpenResume}
             />
+            <ImageFullView />
           </ActiveSectionProvider>
         </ImageFullViewProvider>
       </ScrollTriggerProvider>

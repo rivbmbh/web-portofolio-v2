@@ -3,7 +3,7 @@ import ButtonResume from "../../common/Button/ButtonResume";
 const Footer = ({ isOpenResume, setIsOpenResume }) => {
   return (
     <>
-      <footer className="w-full p-5 text-white border-t-2 border-gray-900 h-max font-pixel">
+      <footer className="w-full px-4 py-5 text-white border-t-2 border-gray-900 h-max font-pixel">
         <div className="flex items-center justify-between px-4">
           <span>📌2025 Rivaldo Angelo Bomboah</span>
           {/* nav dekstop */}

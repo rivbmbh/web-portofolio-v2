@@ -1,6 +1,6 @@
 - ketika klik gambar modal tambahkan informasi nama dari gambar tsb.☑️
 - footer dibuat sesimpel mungkin☑️
-- percantik header hover/active dan efek ketika scroll tambahkan bg-blur.
+- percantik header efek ketika scroll tambahkan bg-blur.
 - buat sosmed link di kiri atau kanan viewport.
 - button let's connect untuk membuka modal seperti link tracker 
 - fitur rate by star yang masuk ke email

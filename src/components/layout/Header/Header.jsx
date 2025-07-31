@@ -7,16 +7,17 @@ import { useActiveSection } from "../../common/Effect/ActiveSectionContext";
 // import { motion } from "motion";
 
 const Header = ({ isOpenResume, setIsOpenResume }) => {
-  const [isOpenNavMenu, setIsOpenNavMenu] = useState(false);
   const activeSection = useActiveSection();
+  const [isOpenNavMenu, setIsOpenNavMenu] = useState(false);
 
   function handleOpenNavMenu() {
     setIsOpenNavMenu((prev) => !prev);
   }
-  console.info(effectNav({ active: activeSection === "home" }));
   return (
     <>
-      <header className={`sticky top-0 z-50 bg-transparent`}>
+      <header
+        className={`sticky max-w-full w-full top-0 z-50 bg-gray-700/50 backdrop-blur-sm px-4`}
+      >
         <div
           className={`flex justify-between items-center py-4 md:py-5 font-pixel `}
         >
