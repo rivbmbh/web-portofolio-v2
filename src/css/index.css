@@ -8,6 +8,7 @@
   --font-roboto-flex: "Roboto Flex", sans-serif;
   --font-pixel: "VT323", monospace;
   --color-gold: #feba17;
+  --color-primary: oklch(43.2% 0.095 166.913);
   --color-goldhover: #feb917e2;
 }
 

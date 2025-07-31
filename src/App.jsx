@@ -8,6 +8,7 @@ import { ImageFullViewProvider } from "./components/common/Modal/ImageFullViewCo
 import ImageFullView from "./components/common/Modal/ImageFullView";
 import { ScrollTriggerProvider } from "./components/common/Scroll/ScrollTriggerContext";
 import Footer from "./components/layout/Footer";
+import { ActiveSectionProvider } from "./components/common/Effect/ActiveSectionContext";
 
 function App() {
   const [isOpenResume, setIsOpenResume] = useState(false);
@@ -16,26 +17,28 @@ function App() {
     <>
       <ScrollTriggerProvider>
         <ImageFullViewProvider>
-          <Header
-            isOpenResume={isOpenResume}
-            setIsOpenResume={setIsOpenResume}
-          />
-
-          {/* Resume */}
-          {isOpenResume && (
-            <ViewResume
+          <ActiveSectionProvider>
+            <Header
               isOpenResume={isOpenResume}
               setIsOpenResume={setIsOpenResume}
             />
-          )}
+            <ImageFullView />
 
-          <HeroSection />
-          <Skills />
-          <Footer
-            isOpenResume={isOpenResume}
-            setIsOpenResume={setIsOpenResume}
-          />
-          <ImageFullView />
+            {/* Resume */}
+            {isOpenResume && (
+              <ViewResume
+                isOpenResume={isOpenResume}
+                setIsOpenResume={setIsOpenResume}
+              />
+            )}
+
+            <HeroSection />
+            <Skills />
+            <Footer
+              isOpenResume={isOpenResume}
+              setIsOpenResume={setIsOpenResume}
+            />
+          </ActiveSectionProvider>
         </ImageFullViewProvider>
       </ScrollTriggerProvider>
     </>
