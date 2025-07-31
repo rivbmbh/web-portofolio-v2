@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { effectNav, hamburgerLine } from "../../../js/style";
 import { motion, AnimatePresence } from "framer-motion";
 import ButtonResume from "../../common/Button/ButtonResume";
@@ -9,18 +9,28 @@ import { useActiveSection } from "../../common/Effect/ActiveSectionContext";
 const Header = ({ isOpenResume, setIsOpenResume }) => {
   const activeSection = useActiveSection();
   const [isOpenNavMenu, setIsOpenNavMenu] = useState(false);
+  const [isTop, setIsTop] = useState(true);
 
   function handleOpenNavMenu() {
     setIsOpenNavMenu((prev) => !prev);
   }
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsTop(window.scrollY <= 10); // Ubah sesuai kebutuhan (bisa 0–20px)
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
   return (
     <>
       <header
-        className={`sticky max-w-full w-full top-0 z-50 bg-gray-700/50 backdrop-blur-sm px-6`}
+        className={`sticky max-w-full w-full top-0 z-50 px-6 ${
+          isTop ? "bg-transparent" : "bg-gray-700/50 backdrop-blur-sm shadow-md"
+        } transition-all duration-500`}
       >
-        <div
-          className={`flex justify-between items-center py-4 md:py-5 font-pixel `}
-        >
+        <div className={`flex justify-between items-center py-3 font-pixel `}>
           <div className={`text-4xl font-bold text-primary`}>
             <a href="#" className="block">
               RAB
