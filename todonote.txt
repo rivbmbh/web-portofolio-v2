@@ -1,7 +1,8 @@
 - ketika klik gambar modal tambahkan informasi nama dari gambar tsb.☑️
-- footer dibuat sesimpel mungkin☑️
-- percantik header efek ketika scroll tambahkan bg-blur.
-- buat sosmed link di kiri atau kanan viewport.
-- button let's connect untuk membuka modal seperti link tracker 
-- fitur rate by star yang masuk ke email
-- button to footer dan to header seperti di web porto lama
+- footer dibuat sesimpel mungkin.☑️
+- percantik header efek ketika scroll tambahkan bg-blur.☑️
+- buat sosmed link di kiri atau kanan viewport.(opsional jk suka)
+- button let's connect untuk membuka modal seperti link tracker.
+- fitur rate by star yang masuk ke email.
+- button to footer dan to header seperti di web porto lama.
+- tambahkan mode normal dan mode pixel.

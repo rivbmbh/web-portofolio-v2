@@ -26,8 +26,12 @@ const Cursor = () => {
         return;
       }
       const tag = target.tagName.toLowerCase();
+      const classTag = target.className.toLowerCase();
 
-      if (tag === "img") {
+      if (classTag.includes("nonview")) {
+        setCaption("");
+        enlargeCursor();
+      } else if (tag === "img") {
         setCaption("View");
         enlargeCursor();
       } else if (tag === "button" || tag === "a") {
