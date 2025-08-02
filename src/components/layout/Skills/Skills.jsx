@@ -31,12 +31,12 @@ const Skills = () => {
         className="flex flex-col justify-between w-full gap-10 mt-12 mb-10 text-white min-[770px]::gap-2 min-[770px]:flex-row font-pixel px-2"
       >
         <div className="flex flex-col items-center justify-center w-full min-[770px]:w-1/2">
-          <h2 className="mb-10 text-3xl font-semibold sm:text-4xl text-start">
+          <h2 className="mb-10 text-3xl font-semibold sm:text-4xl text-center min-[770px]:text-start">
             Web developer skills
           </h2>
 
           {/* circle tools/programming language */}
-          <div className="grid w-full grid-cols-2 xs:grid-cols-3 gap-8 xs:gap-2 min-[770px]:gap-8 lg:gap-4 min-[770px]:grid-cols-3 lg:grid-cols-4">
+          <div className="grid w-full grid-cols-1 min-[200px]:grid-cols-2 xs:grid-cols-3 gap-8 xs:gap-2 min-[770px]:gap-8 lg:gap-4 min-[770px]:grid-cols-3 lg:grid-cols-4">
             <SkillCircle
               start={triggered}
               percent={90}
@@ -108,12 +108,12 @@ const Skills = () => {
           </div>
         </div>
         <div className="flex flex-col items-center justify-center w-full min-[770px]:w-1/2">
-          <h2 className="mb-10 text-3xl font-semibold sm:text-4xl text-start">
+          <h2 className="mb-10 text-3xl font-semibold sm:text-4xl text-center min-[770px]:text-start">
             Other skills and tools
           </h2>
 
           {/* circle other skills */}
-          <div className="grid w-full grid-cols-2 xs:grid-cols-3 gap-8 xs:gap-2 min-[770px]:gap-8 lg:gap-4 min-[770px]:grid-cols-3 lg:grid-cols-4">
+          <div className="grid w-full grid-cols-1 min-[200px]:grid-cols-2 xs:grid-cols-3 gap-8 xs:gap-2 min-[770px]:gap-8 lg:gap-4 min-[770px]:grid-cols-3 lg:grid-cols-4">
             <SkillCircle
               start={triggered}
               percent={75}
