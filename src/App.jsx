@@ -9,7 +9,7 @@ import ImageFullView from "./components/common/Modal/ImageFullView";
 import { ScrollTriggerProvider } from "./components/common/Scroll/ScrollTriggerContext";
 import Footer from "./components/layout/Footer";
 import { ActiveSectionProvider } from "./components/common/Effect/ActiveSectionContext";
-import ScrollBackToBack from "./components/common/Scroll/ScrollBackToBack";
+import ScrollBackToTop from "./components/common/Scroll/ScrollBackToTop";
 
 function App() {
   const [isOpenResume, setIsOpenResume] = useState(false);
@@ -34,7 +34,7 @@ function App() {
 
             <HeroSection />
             <Skills />
-            <ScrollBackToBack />
+            <ScrollBackToTop />
             <Footer
               isOpenResume={isOpenResume}
               setIsOpenResume={setIsOpenResume}
