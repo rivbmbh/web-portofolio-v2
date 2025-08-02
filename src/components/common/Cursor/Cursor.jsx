@@ -26,7 +26,10 @@ const Cursor = () => {
         return;
       }
       const tag = target.tagName.toLowerCase();
-      const classTag = target.className.toLowerCase();
+      const classTag =
+        typeof target.className === "string"
+          ? target.className.toLowerCase()
+          : String(target.className).toLowerCase();
 
       if (classTag.includes("nonview")) {
         setCaption("");
