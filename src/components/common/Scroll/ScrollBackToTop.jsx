@@ -6,10 +6,7 @@ const ScrollBackToTop = () => {
   const [isBottom, setIsBottom] = useState(false);
 
   function handleClickToHome() {
-    const homeElement = document.getElementById("home");
-    if (homeElement) {
-      homeElement.scrollIntoView({ behavior: "smooth" });
-    }
+    window.scrollTo({ top: 0, behavior: "smooth" });
   }
   useEffect(() => {
     const handleScroll = () => {
