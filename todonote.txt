@@ -1,5 +1,5 @@
 - ketika klik gambar modal tambahkan informasi nama dari gambar tsb.☑️
-- footer dibuat sesimpel mungkin.☑️
+- footer responsive at mobile screen.
 - percantik header efek ketika scroll tambahkan bg-blur.☑️
 - buat sosmed link di kiri atau kanan viewport.(opsional jk suka)
 - button let's connect untuk membuka modal seperti link tracker.
