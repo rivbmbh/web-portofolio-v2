@@ -36,7 +36,7 @@ const ScrollBackToTop = () => {
     <div
       className={`absolute flex items-center justify-center rounded-full w-14 h-14 right-3.5 ${
         isBottom ? "bottom-52 min-[320px]:bottom-20" : "bottom-1"
-      } bg-gray-800/30 animate-bounce backdrop-blur-sm transition-all duration-500 ease-in-out`}
+      } bg-gray-800/30 animate-bounce backdrop-blur-sm transition-all duration-500 ease-in-out  active:bg-gray-700/60 hover:bg-gray-700/60`}
       onClick={handleClickToHome}
     >
       <FontAwesomeIcon
