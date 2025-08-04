@@ -26,7 +26,10 @@ const HeroSection = () => {
 
   return (
     <>
-      <section id="home" className="w-full px-6 text-white pb-14 font-pixel">
+      <section
+        id="home"
+        className="w-full px-6 mb-10 text-white pb-14 font-pixel"
+      >
         <div className="flex flex-col-reverse items-center justify-center gap-10 mt-10 sm:flex-row sm:justify-between">
           <div className="w-full px-8 sm:px-0 sm:w-1/2">
             {/* floting chat */}

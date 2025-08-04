@@ -28,7 +28,7 @@ const Skills = () => {
       <section
         ref={containerRef}
         id="skills"
-        className="flex flex-col justify-between w-full gap-10 mt-12 mb-10 text-white min-[770px]::gap-2 min-[770px]:flex-row font-pixel px-2"
+        className="flex flex-col justify-between w-full gap-10 my-10 text-white min-[770px]::gap-2 min-[770px]:flex-row font-pixel px-2"
       >
         <div className="flex flex-col items-center justify-center w-full min-[770px]:w-1/2">
           <h2 className="mb-10 text-3xl font-semibold sm:text-4xl text-center min-[770px]:text-start">

@@ -11,7 +11,7 @@ const Projects = () => {
 
   return (
     <>
-      <section className="w-full px-4 my-10 text-white font-pixel">
+      <section className="w-full px-4 py-6 my-10 text-white bg-gray-900 font-pixel">
         <h2 className="text-4xl font-bold text-center">Projects</h2>
         <div className="flex flex-wrap items-center gap-4">
           <div
