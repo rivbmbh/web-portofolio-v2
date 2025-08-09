@@ -4,12 +4,19 @@ import {
   faXmark,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 
 const ModalViewProject = ({ caption, isClose, images = [] }) => {
   const scrollRef = useRef(null);
+  const firstImgRef = useRef(null);
+  const [scrollAmount, setScrollAmount] = useState(0);
 
-  const scrollAmount = 600;
+  // const scrollAmount = 600;
+  useEffect(() => {
+    if (firstImgRef.current) {
+      setScrollAmount(firstImgRef.current.offsetWidth + 16); // +16 kalau ada gap
+    }
+  }, []);
 
   function scrollLeft() {
     if (scrollRef.current) {
@@ -48,6 +55,7 @@ const ModalViewProject = ({ caption, isClose, images = [] }) => {
           {images.map((img, index) => (
             <img
               key={index}
+              ref={index === 0 ? firstImgRef : null} // simpan ref di gambar pertama
               src={img}
               alt={`project-${index}`}
               className="flex-shrink-0 w-full h-auto rounded shadow-xl"
