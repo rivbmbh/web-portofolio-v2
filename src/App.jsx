@@ -34,8 +34,8 @@ function App() {
             )}
 
             <HeroSection />
-            <Projects />
             <Skills />
+            <Projects />
             <ScrollBackToTop />
             <Footer
               isOpenResume={isOpenResume}

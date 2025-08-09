@@ -1,4 +1,5 @@
 - ketika klik gambar modal tambahkan informasi nama dari gambar tsb.☑️
+- perbaiki responsive keseluruhan.
 - footer responsive at mobile screen.
 - percantik header efek ketika scroll tambahkan bg-blur.☑️
 - buat sosmed link di kiri atau kanan viewport.(opsional jk suka)

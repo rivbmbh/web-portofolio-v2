@@ -1,31 +1,95 @@
-import { useState } from "react";
+import ProjectFolderIcon from "./ProjectFolderIcon";
 
 const Projects = () => {
-  const open = "folder-open.png";
-  const close = "folder-close.png";
-  const [folderIcon, setFolderIcon] = useState(close);
-
-  function handleChangeIcon() {
-    setFolderIcon(open);
-  }
-
+  const pathProjectsImg = "/public/assets/projects/";
   return (
     <>
-      <section className="w-full px-4 py-6 my-10 text-white bg-gray-900 font-pixel">
-        <h2 className="text-4xl font-bold text-center">Projects</h2>
-        <div className="flex flex-wrap items-center gap-4">
-          <div
-            className="flex items-stretch gap-1 mt-4 w-max"
-            onClick={handleChangeIcon}
-          >
-            <img
-              src={`/public/assets/img/${folderIcon}`}
-              alt="path"
-              className="w-6 h-6 nonview"
-            />
-            <p className="text-md">/landing-page</p>
-          </div>
-          {/* <img src="/public/assets/img/folder-open.png" alt="path" /> */}
+      <section
+        id="projects"
+        className="w-full px-4 pt-6 pb-8 mt-10 text-white bg-gray-900 font-pixel"
+      >
+        <h2 className="mb-5 text-4xl font-bold text-center">Projects</h2>
+        <div className="grid grid-cols-2 min-[390px]:grid-cols-3 gap-1 sm:grid-cols-4">
+          <ProjectFolderIcon
+            projectName={`web-asassincreed`}
+            images={[
+              `${pathProjectsImg}acv (1).png`,
+              `${pathProjectsImg}acv (2).png`,
+              `${pathProjectsImg}acv (3).png`,
+              `${pathProjectsImg}acv (4).png`,
+            ]}
+            description="loreem ipus mdafma njalfn ckm axl  fjndalfkmn"
+          />
+          <ProjectFolderIcon
+            projectName={`web-autis`}
+            images={[
+              `${pathProjectsImg}acv (1).png`,
+              `${pathProjectsImg}acv (2).png`,
+              `${pathProjectsImg}acv (3).png`,
+              `${pathProjectsImg}acv (4).png`,
+            ]}
+            description="loreem ipus mdafma njalfn ckm axl  fjndalfkmn"
+          />
+          <ProjectFolderIcon
+            projectName={`web-sporthub`}
+            images={[
+              `${pathProjectsImg}acv (1).png`,
+              `${pathProjectsImg}acv (2).png`,
+              `${pathProjectsImg}acv (3).png`,
+              `${pathProjectsImg}acv (4).png`,
+            ]}
+            description="loreem ipus mdafma njalfn ckm axl  fjndalfkmn"
+          />
+          <ProjectFolderIcon
+            projectName={`web-portal-berita`}
+            images={[
+              `${pathProjectsImg}acv (1).png`,
+              `${pathProjectsImg}acv (2).png`,
+              `${pathProjectsImg}acv (3).png`,
+              `${pathProjectsImg}acv (4).png`,
+            ]}
+            description="loreem ipus mdafma njalfn ckm axl  fjndalfkmn"
+          />
+          <ProjectFolderIcon
+            projectName={`web-prediction`}
+            images={[
+              `${pathProjectsImg}acv (1).png`,
+              `${pathProjectsImg}acv (2).png`,
+              `${pathProjectsImg}acv (3).png`,
+              `${pathProjectsImg}acv (4).png`,
+            ]}
+            description="loreem ipus mdafma njalfn ckm axl  fjndalfkmn"
+          />
+          <ProjectFolderIcon
+            projectName={`web-dashboard-admin`}
+            images={[
+              `${pathProjectsImg}acv (1).png`,
+              `${pathProjectsImg}acv (2).png`,
+              `${pathProjectsImg}acv (3).png`,
+              `${pathProjectsImg}acv (4).png`,
+            ]}
+            description="loreem ipus mdafma njalfn ckm axl  fjndalfkmn"
+          />
+          <ProjectFolderIcon
+            projectName={`webgis-kuma`}
+            images={[
+              `${pathProjectsImg}acv (1).png`,
+              `${pathProjectsImg}acv (2).png`,
+              `${pathProjectsImg}acv (3).png`,
+              `${pathProjectsImg}acv (4).png`,
+            ]}
+            description="loreem ipus mdafma njalfn ckm axl  fjndalfkmn"
+          />
+          <ProjectFolderIcon
+            projectName={`webgis-wisata`}
+            images={[
+              `${pathProjectsImg}acv (1).png`,
+              `${pathProjectsImg}acv (2).png`,
+              `${pathProjectsImg}acv (3).png`,
+              `${pathProjectsImg}acv (4).png`,
+            ]}
+            description="loreem ipus mdafma njalfn ckm axl  fjndalfkmn"
+          />
         </div>
       </section>
     </>
