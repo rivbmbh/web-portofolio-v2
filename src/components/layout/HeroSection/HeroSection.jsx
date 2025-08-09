@@ -28,68 +28,24 @@ const HeroSection = () => {
     <>
       <section
         id="home"
-        className="w-full px-6 mb-10 text-white pb-14 font-pixel"
+        className="w-full py-5 mb-10 sm:mb-20 text-white min-h-[80vh] h-max sm:m-0 sm:px-10 font-pixel"
       >
-        <div className="flex flex-col-reverse items-center justify-center gap-10 mt-10 sm:flex-row sm:justify-between">
-          <div className="w-full px-8 sm:px-0 sm:w-1/2">
-            {/* floting chat */}
+        <div className="flex flex-wrap justify-center w-full gap-10 mt-10">
+          <div className="flex-1 items-center min-w-[300px] max-w-[500px] sm:min-w-full sm:max-w-full lg:min-w-[300px] lg:max-w-[500px] px-8 sm:px-0">
             <FloatingMessage />
             <Introduce />
             <Profession />
 
-            <div className="flex flex-wrap w-full gap-5 mt-14 ">
+            <div className="flex flex-wrap w-full gap-5 mt-14">
               <HandPoint isSmallScreen={isSmallScreen} />
               <ButtonConnect
                 url="#"
                 name="Let's Connect"
-                effect={`active:scale-105 active:-rotate-3 transition-all ease-in-out duration-200 active:bg-emerald-700 hover:bg-emerald-700`}
+                effect="active:scale-105 active:-rotate-3 transition-all ease-in-out duration-200 active:bg-emerald-700 hover:bg-emerald-700"
               />
             </div>
-            {/* account social media */}
-            {/* 
-              <div className="mt-7">
-                <ul className="flex items-center gap-4">
-                  <li>
-                    <a href="#" className="group">
-                      <FontAwesomeIcon icon={faGithub} className={iconSosmed()} />
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" className="group">
-                      <FontAwesomeIcon
-                        icon={faInstagram}
-                        className={iconSosmed()}
-                      />
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" className="group">
-                      <FontAwesomeIcon
-                        icon={faFacebook}
-                        className={iconSosmed()}
-                      />
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" className="group">
-                      <FontAwesomeIcon
-                        icon={faXTwitter}
-                        className={iconSosmed()}
-                      />
-                    </a>
-                  </li>
-                </ul>
-                  <p className="text-base">
-                    Let’s stay in touch beyond this portfolio. I share more of my
-                    creative process, daily insights, and little moments that shape
-                    my work on social media. Feel free to follow along and say
-                    hello!
-                  </p>
-              </div> 
-            */}
           </div>
 
-          {/* my avatar */}
           <Avatar />
         </div>
       </section>
