@@ -107,7 +107,7 @@ const Header = ({ isOpenResume, setIsOpenResume }) => {
                   animate={{ opacity: 1, scale: 1, y: 0 }}
                   exit={{ opacity: 0, scale: 0.95, y: -10 }}
                   transition={{ duration: 0.2 }}
-                  className={`bg-white/40 backdrop-blur-sm absolute right-1 top-10 flex flex-col gap-4 w-44 p-6 items-stretch text-md rounded-md shadow`}
+                  className={` bg-gray-700/50 backdrop-blur-sm shadow-md absolute right-0 top-[59px] flex flex-col gap-4 w-44 p-6 items-stretch text-md text-white`}
                 >
                   <a
                     href="#home"
