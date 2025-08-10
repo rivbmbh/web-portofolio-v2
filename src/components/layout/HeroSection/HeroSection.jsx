@@ -28,10 +28,10 @@ const HeroSection = () => {
     <>
       <section
         id="home"
-        className="w-full py-5 mb-10 sm:mb-20 text-white min-h-[80vh] h-max sm:m-0 sm:px-10 font-pixel"
+        className="w-full py-7 mb-14 sm:mb-20 text-white min-h-[80vh] h-max sm:m-0 sm:px-10 font-pixel"
       >
-        <div className="flex flex-wrap justify-center w-full gap-10 mt-10">
-          <div className="flex-1 items-center min-w-[300px] max-w-[500px] sm:min-w-full sm:max-w-full lg:min-w-[300px] lg:max-w-[500px] px-8 sm:px-0">
+        <div className="flex flex-wrap justify-center w-full mt-10 gap-y-3 xs:gap-10">
+          <div className="xs:flex-1 items-center xs:min-w-[300px] xs:max-w-[500px] sm:min-w-full sm:max-w-full lg:min-w-[300px] lg:max-w-[500px] px-8 sm:px-0">
             <FloatingMessage />
             <Introduce />
             <Profession />
