@@ -15,7 +15,7 @@ const hamburgerLine = tv({
 
 const iconSosmed = tv({
   base: [
-    "text-2xl group-hover:scale-125 transition-all duration-300 ease-in-out",
+    "text-2xl hover:scale-125 active:scale-125 transition-all duration-300 ease-in-out",
   ],
 });
 
