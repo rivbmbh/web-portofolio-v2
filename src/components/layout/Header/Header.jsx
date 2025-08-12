@@ -1,14 +1,12 @@
 import { useEffect, useState } from "react";
-import { effectNav } from "../../../js/style";
 import { motion, AnimatePresence } from "framer-motion";
 import ButtonResume from "../../common/Button/ButtonResume";
-import { useActiveSection } from "../../common/Effect/ActiveSectionContext";
 import NavMobile from "./NavMobile";
+import NavDekstop from "./NavDekstop";
 
 // import { motion } from "motion";
 
 const Header = ({ isOpenResume, setIsOpenResume }) => {
-  const activeSection = useActiveSection();
   const [isTop, setIsTop] = useState(true);
 
   useEffect(() => {
@@ -34,45 +32,10 @@ const Header = ({ isOpenResume, setIsOpenResume }) => {
             </a>
           </div>
 
-          {/* nav dekstop */}
-          <nav
-            className={`hidden md:flex justify-center items-center gap-8 text-md text-white h-max`}
-          >
-            <a
-              href="#home"
-              className={effectNav({ active: activeSection === "home" })}
-            >
-              Home
-            </a>
-            <a
-              href="#skills"
-              className={effectNav({ active: activeSection === "about" })}
-            >
-              About
-            </a>
-            <a
-              href="#skills"
-              className={effectNav({ active: activeSection === "skills" })}
-            >
-              Skills
-            </a>
-            <a
-              href="#"
-              className={effectNav({ active: activeSection === "projects" })}
-            >
-              Projects
-            </a>
-            <a
-              href="#"
-              className={effectNav({ active: activeSection === "contact" })}
-            >
-              Contact
-            </a>
-            <ButtonResume
-              name="Resume"
-              onClick={() => setIsOpenResume(!isOpenResume)}
-            />
-          </nav>
+          <NavDekstop
+            isOpenResume={isOpenResume}
+            setIsOpenResume={setIsOpenResume}
+          />
 
           <NavMobile
             isOpenResume={isOpenResume}
