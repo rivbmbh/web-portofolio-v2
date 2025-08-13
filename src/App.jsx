@@ -11,6 +11,7 @@ import Footer from "./components/layout/Footer";
 import { ActiveSectionProvider } from "./components/common/Effect/ActiveSectionContext";
 import ScrollBackToTop from "./components/common/Scroll/ScrollBackToTop";
 import Projects from "./components/layout/Projects";
+import About from "./components/layout/About";
 
 function App() {
   const [isOpenResume, setIsOpenResume] = useState(false);
@@ -34,6 +35,7 @@ function App() {
             )}
 
             <HeroSection />
+            <About />
             <Skills />
             <Projects />
             <ScrollBackToTop />

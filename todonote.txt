@@ -1,6 +1,7 @@
 - ketika klik gambar modal tambahkan informasi nama dari gambar tsb.☑️
 - percantik header efek ketika scroll tambahkan bg-blur.☑️
 - perbaiki responsive keseluruhan.☑️
+- pada section about tambah sertifikat
 - jangan lupa lengkapi project sesuai foto dan deskripsinya
 - footer responsive at mobile screen.
 - buat sosmed link di kiri atau kanan viewport.(opsional jk suka)
