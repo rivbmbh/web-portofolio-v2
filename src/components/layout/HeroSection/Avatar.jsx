@@ -5,7 +5,7 @@ const Avatar = () => {
   const { openImage } = useImageFullView();
 
   return (
-    <div className="flex xs:flex-1 xs:min-w-[300px] xs:max-w-[500px] sm:min-w-full sm:max-w-full lg:min-w-[300px] lg:max-w-[500px] px-4 sm:px-0 mb-5 sm:mb-0 transition-transform duration-200 ease-in-out ">
+    <div className="w-full px-4 lg:w-1/2">
       <img
         src="assets/img/rab.png"
         alt="myavatar"

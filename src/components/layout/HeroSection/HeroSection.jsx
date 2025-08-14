@@ -28,25 +28,27 @@ const HeroSection = () => {
     <>
       <section
         id="home"
-        className="w-full pt-8 mb-14 sm:mb-20 text-white min-h-[80vh] h-max sm:m-0 sm:px-10 font-pixel"
+        className="px-5 py-10 my-10 text-white sm:px-10 font-pixel"
       >
-        <div className="flex flex-wrap justify-center w-full mt-10 gap-y-3 xs:gap-10">
-          <div className="xs:flex-1 items-center xs:min-w-[300px] xs:max-w-[500px] sm:min-w-full sm:max-w-full lg:min-w-[300px] lg:max-w-[500px] px-8 sm:px-0">
-            <FloatingMessage />
-            <Introduce />
-            <Profession />
+        <div className="container mx-auto sm:mx-0">
+          <div className="flex flex-wrap items-center justify-center">
+            <div className="self-center w-full px-4 lg:w-1/2">
+              <FloatingMessage />
+              <Introduce />
+              <Profession />
 
-            <div className="flex flex-wrap w-full gap-5 mt-14">
-              <HandPoint isSmallScreen={isSmallScreen} />
-              <ButtonConnect
-                url="#"
-                name="Let's Connect"
-                effect="active:scale-105 active:-rotate-3 transition-all ease-in-out duration-200 active:bg-emerald-700 hover:bg-emerald-700"
-              />
+              <div className="flex flex-wrap self-center w-full gap-5 mt-14">
+                <HandPoint isSmallScreen={isSmallScreen} />
+                <ButtonConnect
+                  url="#"
+                  name="Let's Connect"
+                  effect="active:scale-105 active:-rotate-3 transition-all ease-in-out duration-200 active:bg-emerald-700 hover:bg-emerald-700"
+                />
+              </div>
             </div>
-          </div>
 
-          <Avatar />
+            <Avatar />
+          </div>
         </div>
       </section>
     </>
