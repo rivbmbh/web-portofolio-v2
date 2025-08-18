@@ -1,7 +1,7 @@
 import { useState } from "react";
 import ModalViewProject from "./ModalViewProject";
 
-const ProjectFolderIcon = ({ projectName, images, description }) => {
+const ProjectFolderIcon = ({ projectName, images, description, url }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   function handleOpenFolder() {
@@ -26,6 +26,7 @@ const ProjectFolderIcon = ({ projectName, images, description }) => {
           caption={[projectName, description]}
           isClose={handleOpenFolder}
           images={images}
+          url={url}
         />
       )}
     </>

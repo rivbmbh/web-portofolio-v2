@@ -41,14 +41,16 @@ const Projects = () => {
             description="loreem ipus mdafma njalfn ckm axl  fjndalfkmn"
           />
           <ProjectFolderIcon
-            projectName={`web-portal-berita`}
+            projectName={`web-kasir`}
             images={[
-              `${pathProjectsImg}acv (1).png`,
-              `${pathProjectsImg}acv (2).png`,
-              `${pathProjectsImg}acv (3).png`,
-              `${pathProjectsImg}acv (4).png`,
+              `${pathProjectsImg}kasir (1).png`,
+              `${pathProjectsImg}kasir (2).png`,
+              `${pathProjectsImg}kasir (3).png`,
+              `${pathProjectsImg}kasir (4).png`,
+              `${pathProjectsImg}kasir (5).png`,
+              `${pathProjectsImg}kasir (6).png`,
             ]}
-            description="loreem ipus mdafma njalfn ckm axl  fjndalfkmn"
+            description="project ini saya buat dari mengikuti pelatihan dari dunia coding. Terdapat fitur payment with QRIS."
           />
           <ProjectFolderIcon
             projectName={`web-prediction`}
@@ -61,14 +63,13 @@ const Projects = () => {
             description="loreem ipus mdafma njalfn ckm axl  fjndalfkmn"
           />
           <ProjectFolderIcon
-            projectName={`web-dashboard-admin`}
+            projectName={`web-portal-berita`}
             images={[
-              `${pathProjectsImg}acv (1).png`,
-              `${pathProjectsImg}acv (2).png`,
-              `${pathProjectsImg}acv (3).png`,
-              `${pathProjectsImg}acv (4).png`,
+              `${pathProjectsImg}wpb (1).png`,
+              `${pathProjectsImg}wpb (2).png`,
             ]}
-            description="loreem ipus mdafma njalfn ckm axl  fjndalfkmn"
+            description="web ini saya bangun dengan tim Tuama Digital"
+            url={["matajambi.com", "https://www.matajambi.com/"]}
           />
           <ProjectFolderIcon
             projectName={`webgis-kuma`}

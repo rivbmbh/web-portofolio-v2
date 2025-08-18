@@ -6,7 +6,7 @@ import {
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useEffect, useRef, useState } from "react";
 
-const ModalViewProject = ({ caption, isClose, images = [] }) => {
+const ModalViewProject = ({ caption, isClose, images = [], url = "" }) => {
   const scrollRef = useRef(null);
   const firstImgRef = useRef(null);
   const [scrollAmount, setScrollAmount] = useState(0);
@@ -49,7 +49,7 @@ const ModalViewProject = ({ caption, isClose, images = [] }) => {
 
         <div
           ref={scrollRef}
-          className="flex w-full max-w-full gap-4 p-4 overflow-hidden h-max sm:max-w-2xl 2xl:max-w-4xl scroll-smooth"
+          className="flex w-full max-w-full gap-4 p-4 overflow-hidden h-max sm:max-w-4xl 2xl:max-w-5xl scroll-smooth"
         >
           {images.map((img, index) => (
             <img
@@ -57,7 +57,7 @@ const ModalViewProject = ({ caption, isClose, images = [] }) => {
               ref={index === 0 ? firstImgRef : null} // simpan ref di gambar pertama
               src={img}
               alt={`project-${index}`}
-              className="flex-shrink-0 w-full rounded shadow-xl nonview"
+              className="flex-shrink-0 w-full h-full rounded shadow-xl nonview"
             />
           ))}
         </div>
@@ -73,6 +73,9 @@ const ModalViewProject = ({ caption, isClose, images = [] }) => {
 
       <h2 className="text-2xl font-semibold text-center ">{caption[0]}</h2>
       <p className="text-center">{caption[1]}</p>
+      <a href={url[1]} target="_blank" className="text-blue-400 underline">
+        {url[0]}
+      </a>
     </div>
   );
 };

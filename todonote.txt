@@ -9,3 +9,4 @@
 - fitur rate by star yang masuk ke email.
 - button to footer dan to header seperti di web porto lama.
 - tambahkan mode normal dan mode pixel.
+- fitur SEO agar mudah dicari
