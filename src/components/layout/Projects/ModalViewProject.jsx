@@ -10,7 +10,7 @@ const ModalViewProject = ({ caption, isClose, images = [], url = "" }) => {
   const scrollRef = useRef(null);
   const firstImgRef = useRef(null);
   const [scrollAmount, setScrollAmount] = useState(0);
-
+  console.info(url);
   // const scrollAmount = 600;
   useEffect(() => {
     if (firstImgRef.current) {

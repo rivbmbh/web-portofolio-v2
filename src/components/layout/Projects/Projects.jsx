@@ -18,17 +18,17 @@ const Projects = () => {
               `${pathProjectsImg}acv (3).png`,
               `${pathProjectsImg}acv (4).png`,
             ]}
-            description="loreem ipus mdafma njalfn ckm axl  fjndalfkmn"
+            description="web static dari hasil belajar tailwindCSS"
           />
           <ProjectFolderIcon
-            projectName={`web-autis`}
+            projectName={`tuama-digital`}
             images={[
-              `${pathProjectsImg}acv (1).png`,
-              `${pathProjectsImg}acv (2).png`,
-              `${pathProjectsImg}acv (3).png`,
-              `${pathProjectsImg}acv (4).png`,
+              `${pathProjectsImg}td (1).png`,
+              `${pathProjectsImg}td (2).png`,
+              `${pathProjectsImg}td (3).png`,
             ]}
-            description="loreem ipus mdafma njalfn ckm axl  fjndalfkmn"
+            description="web perusahaan jasa pembuatan sistem berbasis web dan mobile, dimana saya berkontribusi membangun web ini terutama pada bagian dashboard adminya"
+            url={["tuamadigital.com", "https://www.tuamadigital.id"]}
           />
           <ProjectFolderIcon
             projectName={`web-sporthub`}
