@@ -21,7 +21,7 @@ const Projects = () => {
             description="web static dari hasil belajar tailwindCSS"
           />
           <ProjectFolderIcon
-            projectName={`tuama-digital`}
+            projectName={`dashboard-admin`}
             images={[
               `${pathProjectsImg}td (1).png`,
               `${pathProjectsImg}td (2).png`,
@@ -53,7 +53,7 @@ const Projects = () => {
             description="project ini saya buat dari mengikuti pelatihan dari dunia coding. Terdapat fitur payment with QRIS."
           />
           <ProjectFolderIcon
-            projectName={`web-prediction`}
+            projectName={`web-analisis`}
             images={[
               `${pathProjectsImg}acv (1).png`,
               `${pathProjectsImg}acv (2).png`,
