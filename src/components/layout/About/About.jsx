@@ -1,21 +1,17 @@
 const About = () => {
   return (
     <>
-      <section id="about" className="text-white font-pixel">
-        <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam facere
-          optio placeat molestias quas adipisci dolore fugiat quod distinctio
-          iusto omnis nisi consequatur temporibus quidem tenetur et quis
-          perferendis, officiis explicabo architecto sint! Ex minima, hic
-          voluptatibus corporis consectetur vel quis! Debitis, perspiciatis,
-          explicabo tenetur id voluptates sequi officia dolorem tempore, vitae
-          ratione quos quia aut. Odio laborum dignissimos, ratione corporis
-          sapiente nesciunt libero ipsum repellat. Aliquam, ullam natus
-          inventore totam recusandae nihil temporibus corporis magnam
-          praesentium ad cumque ducimus, eius commodi molestias nemo. Quibusdam
-          labore tempore doloremque neque quaerat, nihil optio, sapiente vitae
-          error, provident architecto veniam corporis rem.
-        </p>
+      <section id="about" className="px-8 pb-5 mb-10 text-white font-pixel">
+        <div className="container mx-auto">
+          <h2 className="mb-5 text-4xl font-bold text-center">About me</h2>
+          <p className="text-base text-center">
+            I someone who doesn't consider themselves exceptional but always
+            strives to improve and develop their skills, aspiring to become a
+            person with clear goals in life. I also enjoy playing games, but
+            it's mostly to pass the time, not much more. Additionally, you like
+            to go for rides on your motorcycle.
+          </p>
+        </div>
       </section>
     </>
   );
