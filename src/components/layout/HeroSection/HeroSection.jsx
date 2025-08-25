@@ -28,7 +28,7 @@ const HeroSection = () => {
     <>
       <section
         id="home"
-        className="px-5 py-10 my-10 text-white sm:px-10 font-pixel"
+        className="px-5 pt-10 mt-10 text-white mb-14 pb-14 sm:px-10 font-pixel"
       >
         <div className="container mx-auto sm:mx-0">
           <div className="flex flex-wrap items-center justify-center">
