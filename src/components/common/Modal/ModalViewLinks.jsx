@@ -7,12 +7,12 @@ const ModalViewLinks = ({ titleLink, fullLink, shortLink }) => {
       <a
         href={fullLink}
         target="_blank"
-        className="flex flex-col w-full gap-3 p-5 xs:flex-row xs:items-center hover:bg-slate-700 group"
+        className="flex flex-col w-full gap-3 p-5 xs:flex-row xs:items-center hover:bg-gray-700 group"
       >
-        <div className="flex items-center justify-center w-10 h-10 bg-white rounded-full">
+        <div className="flex items-center justify-center w-3/12 px-2 py-2.5 border border-gray-700 xs:w-max">
           <FontAwesomeIcon
             icon={faLink}
-            className="text-sm text-black xs:text-md"
+            className="text-white text-md xs:text-md"
           />
         </div>
         <div className="w-full">

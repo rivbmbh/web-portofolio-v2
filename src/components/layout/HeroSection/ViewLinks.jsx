@@ -6,7 +6,7 @@ const ViewLinks = ({ handleOpenModalLinks }) => {
   return (
     <>
       <div className="fixed inset-0 z-50 flex flex-col items-center justify-center h-full p-5 text-white bg-slate-950/50 backdrop-blur-xs font-pixel">
-        <div className="relative flex flex-col justify-center w-full rounded-md h-max md:w-3/6 bg-slate-800">
+        <div className="relative flex flex-col justify-center w-full bg-gray-900 rounded-md h-max md:w-3/6">
           <div>
             <h3 className="py-4 text-3xl text-center">Links</h3>
             {/* button close modal */}
