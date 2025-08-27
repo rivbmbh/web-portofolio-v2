@@ -7,10 +7,10 @@ const Avatar = () => {
   return (
     <div className="w-full px-4 lg:w-1/2">
       <img
-        src="assets/img/rab.png"
+        src="assets/img/rab.webp"
         alt="myavatar"
         className="w-56 min-[300px]:w-64 h-auto mx-auto xs:w-80 2zl:w-5/6"
-        onClick={() => openImage("assets/img/rab.png", "Avatar Mr.RAB")}
+        onClick={() => openImage("assets/img/rab.webp", "Avatar Mr.RAB")}
       />
     </div>
   );
