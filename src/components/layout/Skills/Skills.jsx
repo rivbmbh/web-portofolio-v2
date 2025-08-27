@@ -40,68 +40,68 @@ const Skills = () => {
             <SkillCircle
               start={triggered}
               percent={90}
-              imgSrc="/assets/img/php.png"
+              imgSrc="/assets/img/php.webp"
               caption="PHP, programming language"
             />
             <SkillCircle
               start={triggered}
               percent={75}
-              imgSrc="/assets/img/js.png"
+              imgSrc="/assets/img/js.webp"
               caption="Javascript, programming language"
               gridStartPosition="sm:col-start-2"
             />
             <SkillCircle
               start={triggered}
               percent={100}
-              imgSrc="/assets/img/tailwindcss.png"
+              imgSrc="/assets/img/tailwindcss.webp"
               caption="TailwindCSS, CSS framework"
               gridStartPosition="sm:col-start-4"
             />
             <SkillCircle
               start={triggered}
               percent={100}
-              imgSrc="/assets/img/bootstrap.png"
+              imgSrc="/assets/img/bootstrap.webp"
               caption="Bootstrap, CSS framework"
               gridStartPosition="sm:"
             />
             <SkillCircle
               start={triggered}
               percent={85}
-              imgSrc="/assets/img/ci.png"
+              imgSrc="/assets/img/ci.webp"
               caption="Codeigniter, PHP framework"
               gridStartPosition="sm:col-start-3"
             />
             <SkillCircle
               start={triggered}
               percent={75}
-              imgSrc="/assets/img/laravel.png"
+              imgSrc="/assets/img/laravel.webp"
               caption="Laravel, PHP framework"
               gridStartPosition="sm:col-start-4"
             />
             <SkillCircle
               start={triggered}
               percent={70}
-              imgSrc="/assets/img/nodejs.png"
+              imgSrc="/assets/img/nodejs.webp"
               caption="NodeJS, runtime javascript"
               gridStartPosition="sm:col-start-2"
             />
             <SkillCircle
               start={triggered}
               percent={60}
-              imgSrc="/assets/img/react.png"
+              imgSrc="/assets/img/react.webp"
               caption="ReactJS, javascript library"
             />
             <SkillCircle
               start={triggered}
               percent={83}
-              imgSrc="/assets/img/mysql.png"
+              imgSrc="/assets/img/mysql.webp"
               caption="MySQL, Database"
               gridStartPosition="sm:col-start-1"
             />
             <SkillCircle
               start={triggered}
               percent={55}
-              imgSrc="/assets/img/mongodb.png"
+              imgSrc="/assets/img/mongodb.webp"
               caption="MongoDB, Database"
               gridStartPosition="sm:col-start-4"
             />
@@ -117,49 +117,49 @@ const Skills = () => {
             <SkillCircle
               start={triggered}
               percent={75}
-              imgSrc="/assets/img/arcgis.png"
+              imgSrc="/assets/img/arcgis.webp"
               caption="Argis, mapping tool"
               gridStartPosition="sm:col-start-2"
             />
             <SkillCircle
               start={triggered}
               percent={75}
-              imgSrc="/assets/img/excel.png"
+              imgSrc="/assets/img/excel.webp"
               caption="Microsoft Excel"
               gridStartPosition="sm:col-start-4  "
             />
             <SkillCircle
               start={triggered}
               percent={85}
-              imgSrc="/assets/img/figma.png"
+              imgSrc="/assets/img/figma.webp"
               caption="Figma, UI/UX design tool"
               gridStartPosition="sm:"
             />
             <SkillCircle
               start={triggered}
               percent={60}
-              imgSrc="/assets/img/qgis.png"
+              imgSrc="/assets/img/qgis.webp"
               caption="QGIS, mapping tool"
               gridStartPosition="sm:col-start-3"
             />
             <SkillCircle
               start={triggered}
               percent={40}
-              imgSrc="/assets/img/blender.png"
+              imgSrc="/assets/img/blender.webp"
               caption="Blender, 3D modeling tool"
               gridStartPosition="sm:col-start-4"
             />
             <SkillCircle
               start={triggered}
               percent={90}
-              imgSrc="/assets/img/xd.png"
+              imgSrc="/assets/img/xd.webp"
               caption="Adobe XD, UI/UX design tool"
               gridStartPosition="sm:col-start-3"
             />
             <SkillCircle
               start={triggered}
               percent={79}
-              imgSrc="/assets/img/canva.png"
+              imgSrc="/assets/img/canva.webp"
               caption="Canva, graphic design tool"
               gridStartPosition="sm:col-start-3"
             />

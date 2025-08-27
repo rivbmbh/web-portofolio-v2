@@ -13,19 +13,19 @@ const Projects = () => {
           <ProjectFolderIcon
             projectName={`web-asassincreed`}
             images={[
-              `${pathProjectsImg}acv (1).png`,
-              `${pathProjectsImg}acv (2).png`,
-              `${pathProjectsImg}acv (3).png`,
-              `${pathProjectsImg}acv (4).png`,
+              `${pathProjectsImg}acv (1).webp`,
+              `${pathProjectsImg}acv (2).webp`,
+              `${pathProjectsImg}acv (3).webp`,
+              `${pathProjectsImg}acv (4).webp`,
             ]}
             description="web static dari hasil belajar tailwindCSS"
           />
           <ProjectFolderIcon
             projectName={`dashboard-admin`}
             images={[
-              `${pathProjectsImg}td (1).png`,
-              `${pathProjectsImg}td (2).png`,
-              `${pathProjectsImg}td (3).png`,
+              `${pathProjectsImg}td (1).webp`,
+              `${pathProjectsImg}td (2).webp`,
+              `${pathProjectsImg}td (3).webp`,
             ]}
             description="web perusahaan jasa pembuatan sistem berbasis web dan mobile, dimana saya berkontribusi membangun web ini terutama pada bagian dashboard adminya"
             url={["tuamadigital.com", "https://www.tuamadigital.id"]}
@@ -33,40 +33,40 @@ const Projects = () => {
           <ProjectFolderIcon
             projectName={`web-sporthub`}
             images={[
-              `${pathProjectsImg}acv (1).png`,
-              `${pathProjectsImg}acv (2).png`,
-              `${pathProjectsImg}acv (3).png`,
-              `${pathProjectsImg}acv (4).png`,
+              `${pathProjectsImg}acv (1).webp`,
+              `${pathProjectsImg}acv (2).webp`,
+              `${pathProjectsImg}acv (3).webp`,
+              `${pathProjectsImg}acv (4).webp`,
             ]}
             description="loreem ipus mdafma njalfn ckm axl  fjndalfkmn"
           />
           <ProjectFolderIcon
             projectName={`web-kasir`}
             images={[
-              `${pathProjectsImg}kasir (1).png`,
-              `${pathProjectsImg}kasir (2).png`,
-              `${pathProjectsImg}kasir (3).png`,
-              `${pathProjectsImg}kasir (4).png`,
-              `${pathProjectsImg}kasir (5).png`,
-              `${pathProjectsImg}kasir (6).png`,
+              `${pathProjectsImg}kasir (1).webp`,
+              `${pathProjectsImg}kasir (2).webp`,
+              `${pathProjectsImg}kasir (3).webp`,
+              `${pathProjectsImg}kasir (4).webp`,
+              `${pathProjectsImg}kasir (5).webp`,
+              `${pathProjectsImg}kasir (6).webp`,
             ]}
             description="project ini saya buat dari mengikuti pelatihan dari dunia coding. Terdapat fitur payment with QRIS."
           />
           <ProjectFolderIcon
             projectName={`web-analisis`}
             images={[
-              `${pathProjectsImg}acv (1).png`,
-              `${pathProjectsImg}acv (2).png`,
-              `${pathProjectsImg}acv (3).png`,
-              `${pathProjectsImg}acv (4).png`,
+              `${pathProjectsImg}acv (1).webp`,
+              `${pathProjectsImg}acv (2).webp`,
+              `${pathProjectsImg}acv (3).webp`,
+              `${pathProjectsImg}acv (4).webp`,
             ]}
             description="loreem ipus mdafma njalfn ckm axl  fjndalfkmn"
           />
           <ProjectFolderIcon
             projectName={`web-portal-berita`}
             images={[
-              `${pathProjectsImg}wpb (1).png`,
-              `${pathProjectsImg}wpb (2).png`,
+              `${pathProjectsImg}wpb (1).webp`,
+              `${pathProjectsImg}wpb (2).webp`,
             ]}
             description="web ini saya bangun dengan tim Tuama Digital"
             url={["matajambi.com", "https://www.matajambi.com/"]}
@@ -74,20 +74,20 @@ const Projects = () => {
           <ProjectFolderIcon
             projectName={`webgis-kuma`}
             images={[
-              `${pathProjectsImg}acv (1).png`,
-              `${pathProjectsImg}acv (2).png`,
-              `${pathProjectsImg}acv (3).png`,
-              `${pathProjectsImg}acv (4).png`,
+              `${pathProjectsImg}acv (1).webp`,
+              `${pathProjectsImg}acv (2).webp`,
+              `${pathProjectsImg}acv (3).webp`,
+              `${pathProjectsImg}acv (4).webp`,
             ]}
             description="loreem ipus mdafma njalfn ckm axl  fjndalfkmn"
           />
           <ProjectFolderIcon
             projectName={`webgis-wisata`}
             images={[
-              `${pathProjectsImg}acv (1).png`,
-              `${pathProjectsImg}acv (2).png`,
-              `${pathProjectsImg}acv (3).png`,
-              `${pathProjectsImg}acv (4).png`,
+              `${pathProjectsImg}acv (1).webp`,
+              `${pathProjectsImg}acv (2).webp`,
+              `${pathProjectsImg}acv (3).webp`,
+              `${pathProjectsImg}acv (4).webp`,
             ]}
             description="loreem ipus mdafma njalfn ckm axl  fjndalfkmn"
           />

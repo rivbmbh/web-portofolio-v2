@@ -15,7 +15,7 @@ const ProjectFolderIcon = ({ projectName, images, description, url }) => {
         onClick={handleOpenFolder}
       >
         <img
-          src={`/assets/img/folder-${isOpen ? "open" : "close"}.png`}
+          src={`/assets/img/folder-${isOpen ? "open" : "close"}.webp`}
           alt="path"
           className={`w-20 h-20 nonview hover:grayscale-75 transition-all ease-in-out duration-500`}
         />
