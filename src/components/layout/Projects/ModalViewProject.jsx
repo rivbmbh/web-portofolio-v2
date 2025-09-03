@@ -10,8 +10,7 @@ const ModalViewProject = ({ caption, isClose, images = [], url = "" }) => {
   const scrollRef = useRef(null);
   const firstImgRef = useRef(null);
   const [scrollAmount, setScrollAmount] = useState(0);
-  console.info(url);
-  // const scrollAmount = 600;
+
   useEffect(() => {
     if (firstImgRef.current) {
       setScrollAmount(firstImgRef.current.offsetWidth + 16); // +16 kalau ada gap
@@ -33,7 +32,7 @@ const ModalViewProject = ({ caption, isClose, images = [], url = "" }) => {
     <div className="fixed inset-0 z-50 flex flex-col items-center justify-center h-full p-5 text-white bg-slate-950/50 backdrop-blur-xs font-pixel">
       {/* button close modal */}
       <button
-        className="top-0 right-0 w-full m-5 text-lg text-right sm:absolute xs:text-2xl"
+        className="top-0 right-0 z-20 w-full m-5 text-lg text-right sm:absolute xs:text-2xl"
         onClick={isClose}
       >
         <FontAwesomeIcon icon={faXmark} />
