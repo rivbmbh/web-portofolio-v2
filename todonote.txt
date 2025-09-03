@@ -8,5 +8,5 @@
 - fitur SEO agar mudah dicari
 
 BUG :
-- perbaiki modal project dimana ketika di zoom 125% btn X untuk close tidak bisa diklik
+- perbaiki modal project dimana ketika di zoom 125% btn X untuk close tidak bisa diklik☑️
 - perbaiki performa webnya
