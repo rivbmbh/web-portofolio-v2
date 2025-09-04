@@ -5,7 +5,7 @@ const Avatar = () => {
   const { openImage } = useImageFullView();
 
   return (
-    <div className="w-full px-4 lg:w-1/2">
+    <div className="w-full lg:w-1/2">
       <img
         src="assets/img/rab.webp"
         alt="myavatar"
