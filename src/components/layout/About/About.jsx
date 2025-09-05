@@ -12,15 +12,13 @@ const About = () => {
               </h2>
               <div className="space-y-5">
                 <p className="text-base text-center sm:px-4">
-                  I originally pursued a degree in Information Systems, but
-                  along the way I discovered my true passion in programming.
-                  Since my fifth semester, I’ve been learning to code more
-                  seriously, mostly self-taught outside of campus, and my
-                  curiosity has only grown stronger. Over the past three years,
-                  I’ve explored various tech stacks, joined trainings, and built
-                  a deeper understanding of software development. For me, coding
-                  is not just a tool to solve business problems—it’s a space to
-                  create, experiment, and build something meaningful.
+                  I am an Information Systems graduate who discovered a passion
+                  for programming starting in my fifth semester. Over the past
+                  three years, I have been learning independently, exploring
+                  various tech stacks, and joining trainings to strengthen my
+                  skills. Beyond coding, I also have an interest in graphic
+                  design and digital mapping, which allow me to combine
+                  creativity with technical expertise.
                 </p>
                 <p className="text-base text-center sm:px-4">
                   As part of this learning journey, below I’ve included several
