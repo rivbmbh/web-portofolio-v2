@@ -31,7 +31,7 @@ const ViewResume = ({ setIsOpenResume }) => {
           <ButtonCloseModal
             action={() => setIsOpenResume(false)}
             position="left-1 -top-9"
-            customStyle="z-20 text-white"
+            customStyle="z-20 text-white absolute active:scale-105"
           />
           <a
             href={`/assets/resume.pdf`}

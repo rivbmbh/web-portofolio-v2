@@ -5,7 +5,7 @@ const ButtonCloseModal = ({ action, position, customStyle = "" }) => {
   return (
     <>
       <button
-        className={`${position} text-lg text-right absolute xs:text-2xl active:scale-105 ${customStyle}`}
+        className={`${position} text-lg text-right xs:text-2xl ${customStyle}`}
         onClick={action}
       >
         <FontAwesomeIcon icon={faXmark} />
