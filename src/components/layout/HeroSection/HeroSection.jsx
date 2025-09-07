@@ -25,10 +25,11 @@ const HeroSection = () => {
     <>
       <section
         id="home"
-        className="px-4 pt-10 text-white min-h-[40vh] sm:pt-16 mb-14 pb-20 font-pixel"
+        className={`text-white pt-14 sm:pt-16 md:pt-20 pb-24 font-pixel 
+         min-h-[40vh]`}
       >
         <div className="container mx-auto sm:mx-0">
-          <div className="flex flex-wrap items-center justify-between">
+          <div className="flex flex-wrap items-center justify-between gap-5 sm:gap-0">
             <Personal isSmallScreen={isSmallScreen} />
 
             <Avatar />

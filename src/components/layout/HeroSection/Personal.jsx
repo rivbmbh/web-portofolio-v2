@@ -6,7 +6,7 @@ import HandPoint from "./HandPoint";
 
 const Personal = ({ isSmallScreen }) => {
   return (
-    <div className="self-center w-full sm:pl-4 lg:w-1/2">
+    <div className="self-center w-full pl-4 sm:pl-6 md:pl-8 lg:pl-10 lg:w-1/2 ">
       <FloatingMessage />
       <Introduce />
       <Profession />

@@ -5,11 +5,11 @@ const Avatar = () => {
   const { openImage } = useImageFullView();
 
   return (
-    <div className="w-full lg:w-1/2">
+    <div className="flex justify-center w-full lg:w-1/2">
       <img
         src="assets/img/rab.webp"
         alt="myavatar"
-        className="w-56 min-[300px]:w-64 h-auto mx-auto xs:w-80 2zl:w-5/6"
+        className="max-w-full w-80 min-[1280px]:w-[400px]"
         onClick={() => openImage("assets/img/rab.webp", "Avatar Mr.RAB")}
       />
     </div>
