@@ -7,14 +7,12 @@ export default function ImageFullView() {
   if (!viewingImage) return null;
 
   return (
-    <div
-      className="fixed inset-0 z-50 flex flex-col items-center justify-center h-screen p-8 text-white bg-slate-950/50 backdrop-blur-xs font-pixel"
-      onClick={closeImage}
-    >
+    <div className="fixed inset-0 z-50 flex flex-col items-center justify-center h-screen p-8 text-white font-pixel bg-slate-950/50 backdrop-blur-xs">
       <img
         src={viewingImage}
         alt="Zoomed"
         className="max-w-[90%] max-h-[90%] rounded shadow-xl"
+        onClick={closeImage}
       />
       <h2 className="mt-3 text-2xl font-semibold text-center">{caption}</h2>
 

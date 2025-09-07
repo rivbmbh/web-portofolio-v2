@@ -9,8 +9,8 @@
 
 BUG :
 - perbaiki modal project dimana ketika di zoom 125% btn X untuk close tidak bisa diklik☑️
-- perbaiki performa webnya
+- perbaiki agar avatar jangan jus-center tapi jus-end☑️
+- perbaiki close untuk gambar di skills, dimana close cukup tekan diluar gambar bukan di gambarnya☑️
 - ganti nama link LinkInd di button let's connect modal
-- perbaiki agar avatar jangan jus-center tapi jus-end
-- perbaiki close untuk gambar di skills, dimana close cukup tekan diluar gambar bukan di gambarnya
 - perbaiki view modal CV 
+- perbaiki performa webnya
