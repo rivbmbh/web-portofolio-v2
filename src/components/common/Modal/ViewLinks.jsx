@@ -1,7 +1,7 @@
 import { faLink } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-const ModalViewLinks = ({ titleLink, fullLink, shortLink }) => {
+const ViewLinks = ({ titleLink, fullLink, shortLink }) => {
   return (
     <>
       <a
@@ -24,4 +24,4 @@ const ModalViewLinks = ({ titleLink, fullLink, shortLink }) => {
   );
 };
 
-export default ModalViewLinks;
+export default ViewLinks;

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import ViewLinks from "../../layout/HeroSection/ViewLinks";
+import ModalLinks from "../../layout/HeroSection/ModalLinks";
 
 const ButtonConnect = ({ url, name, effect }) => {
   const [isOpenLinks, setIsOpenLinks] = useState(false);
@@ -18,7 +18,9 @@ const ButtonConnect = ({ url, name, effect }) => {
         {name}
       </a>
 
-      {isOpenLinks && <ViewLinks handleOpenModalLinks={handleOpenModalLinks} />}
+      {isOpenLinks && (
+        <ModalLinks handleOpenModalLinks={handleOpenModalLinks} />
+      )}
     </>
   );
 };
