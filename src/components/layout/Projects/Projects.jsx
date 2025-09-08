@@ -8,7 +8,11 @@ const Projects = () => {
         id="projects"
         className="w-full px-4 pt-6 pb-8 mt-10 text-white bg-gray-900 font-pixel"
       >
-        <h2 className="mb-5 text-4xl font-bold text-center">Projects</h2>
+        <h2 className="text-4xl font-bold text-center">Projects</h2>
+        <p className="mt-3 text-base text-center">
+          Presented below are independent projects, client engagements, and
+          projects I managed during my previous professional experience.
+        </p>
         <div className="grid grid-cols-2 min-[390px]:grid-cols-3 gap-1 sm:grid-cols-4">
           <ProjectFolderIcon
             projectName={`web-asassincreed`}

@@ -1,8 +1,8 @@
 - ketika klik gambar modal tambahkan informasi nama dari gambar tsb.☑️
 - percantik header efek ketika scroll tambahkan bg-blur.☑️
 - perbaiki responsive keseluruhan.☑️
+- pada section about tambah sertifikat ☑️
 - jangan lupa lengkapi project sesuai foto dan deskripsinya
-- pada section about tambah sertifikat
 - fitur rate by star yang masuk ke email.
 - tambahkan mode normal dan mode pixel.
 - fitur SEO agar mudah dicari
@@ -11,6 +11,6 @@ BUG :
 - perbaiki modal project dimana ketika di zoom 125% btn X untuk close tidak bisa diklik☑️
 - perbaiki agar avatar jangan jus-center tapi jus-end☑️
 - perbaiki view modal CV ☑️
+- ganti nama link LinkInd di button let's connect modal ☑️
 - perbaiki close untuk gambar di skills, dimana close cukup tekan diluar gambar bukan di gambarnya☑️
-- ganti nama link LinkInd di button let's connect modal
 - perbaiki performa webnya
