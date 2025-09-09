@@ -7,7 +7,7 @@ export const ActiveSectionProvider = ({ children }) => {
   const [activeSection, setActiveSection] = useState("home");
 
   useEffect(() => {
-    const sectionIds = ["home", "skills", "projects", "contact"];
+    const sectionIds = ["home", "about", "skills", "projects"];
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {

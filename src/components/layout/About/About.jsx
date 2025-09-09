@@ -6,7 +6,7 @@ const About = () => {
   // const isIpadPro = width === 1024 && height === 1366;
   return (
     <>
-      <section id="about" className={`px-10 pb-10 text-white mb-14 font-pixel`}>
+      <section id="about" className={`px-10 pb-10 text-white mb-29 font-pixel`}>
         <div className="container mx-auto">
           <div className="grid items-center justify-center grid-cols-1 gap-4">
             <div className="w-full px-3">

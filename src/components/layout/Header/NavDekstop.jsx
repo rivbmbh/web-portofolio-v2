@@ -4,41 +4,24 @@ import { useActiveSection } from "../../common/Effect/ActiveSectionContext";
 
 const NavDekstop = ({ isOpenResume, setIsOpenResume }) => {
   const activeSection = useActiveSection();
+  const sections = ["home", "about", "skills", "projects"];
   return (
     <>
       <nav
-        className={`hidden md:flex justify-center items-center gap-8 text-md text-white h-max`}
+        className={`hidden md:flex justify-center items-center gap-8 text-md text-white h-max ease-in-out duration-200 delay-100 transition-all active:duration-100`}
       >
-        <a
-          href="#home"
-          className={effectNav({ active: activeSection === "home" })}
-        >
-          Home
-        </a>
-        <a
-          href="#about"
-          className={effectNav({ active: activeSection === "about" })}
-        >
-          About
-        </a>
-        <a
-          href="#skills"
-          className={effectNav({ active: activeSection === "skills" })}
-        >
-          Skills
-        </a>
-        <a
-          href="#projects"
-          className={effectNav({ active: activeSection === "projects" })}
-        >
-          Projects
-        </a>
-        <a
-          href="#contact"
-          className={effectNav({ active: activeSection === "contact" })}
-        >
-          Contact
-        </a>
+        {sections.map((section, index) => (
+          <a
+            key={index + section}
+            href={`#${section}`}
+            className={`capitalize ${effectNav({
+              active: activeSection === section,
+            })}`}
+          >
+            {section}
+          </a>
+        ))}
+
         <ButtonResume
           name="Resume"
           onClick={() => setIsOpenResume(!isOpenResume)}

@@ -21,7 +21,7 @@ const iconSosmed = tv({
 
 const effectNav = tv({
   base: [
-    "hover:bg-slate-300 hover:text-slate-800 active:bg-slate-300 active:text-slate-800 transition-all active:duration-100 px-1 ease-in-out duration-400 delay-200",
+    "hover:bg-slate-300 hover:text-slate-800 active:bg-slate-300 active:text-slate-800 transition-all active:duration-100 px-1 ease-in-out duration-200 delay-100",
   ],
   variants: {
     active: {
