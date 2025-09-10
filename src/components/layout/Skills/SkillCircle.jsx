@@ -64,6 +64,7 @@ const SkillCircle = ({
           alt="icon"
           className="object-contain"
           onClick={() => openImage(imgSrc, caption)}
+          loading="lazy"
         />
       </div>
     </div>

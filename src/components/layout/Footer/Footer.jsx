@@ -40,6 +40,7 @@ const Footer = () => {
             src="assets/img/footer-bg (4).webp"
             alt="footer-bg"
             className="object-cover object-bottom w-full h-full opacity-50 nonview"
+            loading="lazy"
           />
         </div>
       </footer>

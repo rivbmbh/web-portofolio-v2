@@ -18,6 +18,7 @@ const ProjectFolderIcon = ({ projectName, images, description, url }) => {
           src={`/assets/img/folder-${isOpen ? "open" : "close"}.webp`}
           alt="path"
           className={`w-20 h-20 nonview hover:grayscale-75 transition-all ease-in-out duration-500`}
+          loading="lazy"
         />
         <p className="text-center text-md">{projectName}</p>
       </div>

@@ -58,6 +58,7 @@ const ModalViewProject = ({ caption, isClose, images = [], url = "" }) => {
               src={img}
               alt={`project-${index}`}
               className="flex-shrink-0 w-full h-full rounded shadow-xl nonview"
+              loading="lazy"
             />
           ))}
         </div>

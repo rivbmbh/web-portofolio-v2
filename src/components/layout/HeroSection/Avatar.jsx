@@ -10,6 +10,7 @@ const Avatar = () => {
         src="assets/img/rab.webp"
         alt="myavatar"
         className="max-w-full w-80 min-[1280px]:w-[400px]"
+        loading="lazy"
         onClick={() => openImage("assets/img/rab.webp", "Avatar Mr.RAB")}
       />
     </div>
