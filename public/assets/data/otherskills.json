@@ -1,0 +1,50 @@
+[
+  {
+    "percent": 75,
+    "imgSrc": "arcgis",
+    "imgFullSrc": "arcgis-(300)",
+    "caption": "Argis, mapping tool",
+    "gridStartPosition": "sm:col-start-2"
+  },
+  {
+    "percent": 75,
+    "imgSrc": "excel",
+    "imgFullSrc": "excel-(300)",
+    "caption": "Microsoft Excel",
+    "gridStartPosition": "sm:col-start-4"
+  },
+  {
+    "percent": 85,
+    "imgSrc": "figma",
+    "imgFullSrc": "figma-(300)",
+    "caption": "Figma, UI/UX design tool"
+  },
+  {
+    "percent": 60,
+    "imgSrc": "qgis",
+    "imgFullSrc": "qgis-(300)",
+    "caption": "QGIS, mapping tool",
+    "gridStartPosition": "sm:col-start-3"
+  },
+  {
+    "percent": 50,
+    "imgSrc": "blender",
+    "imgFullSrc": "blender-(300)",
+    "caption": "Blender, 3D modeling tool",
+    "gridStartPosition": "sm:col-start-4"
+  },
+  {
+    "percent": 90,
+    "imgSrc": "xd",
+    "imgFullSrc": "xd-(300)",
+    "caption": "Adobe XD, UI/UX design tool",
+    "gridStartPosition": "sm:col-start-3"
+  },
+  {
+    "percent": 70,
+    "imgSrc": "canva",
+    "imgFullSrc": "canva-(300)",
+    "caption": "Canva, graphic design tool",
+    "gridStartPosition": "sm:col-start-3"
+  }
+]

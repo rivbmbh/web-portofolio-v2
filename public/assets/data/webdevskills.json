@@ -1,0 +1,69 @@
+[
+  {
+    "percent": 90,
+    "imgSrc": "php",
+    "imgFullSrc": "php-(300)",
+    "caption": "PHP, programming language"
+  },
+  {
+    "percent": 80,
+    "imgSrc": "js",
+    "imgFullSrc": "js-(300)",
+    "caption": "Javascript, programming language",
+    "gridStartPosition": "sm:col-start-2"
+  },
+  {
+    "percent": 100,
+    "imgSrc": "tailwindcss",
+    "imgFullSrc": "tailwindcss-(300)",
+    "caption": "TailwindCSS, CSS framework",
+    "gridStartPosition": "sm:col-start-4"
+  },
+  {
+    "percent": 100,
+    "imgSrc": "bootstrap",
+    "imgFullSrc": "bootstrap-(300)",
+    "caption": "Bootstrap, CSS framework"
+  },
+  {
+    "percent": 85,
+    "imgSrc": "ci",
+    "imgFullSrc": "ci-(300)",
+    "caption": "Codeigniter, PHP framework",
+    "gridStartPosition": "sm:col-start-3"
+  },
+  {
+    "percent": 80,
+    "imgSrc": "laravel",
+    "imgFullSrc": "laravel-(300)",
+    "caption": "Laravel, PHP framework",
+    "gridStartPosition": "sm:col-start-4"
+  },
+  {
+    "percent": 60,
+    "imgSrc": "nodejs",
+    "imgFullSrc": "nodejs-(300)",
+    "caption": "NodeJS, runtime javascript",
+    "gridStartPosition": "sm:col-start-2"
+  },
+  {
+    "percent": 75,
+    "imgSrc": "react",
+    "imgFullSrc": "react-(300)",
+    "caption": "ReactJS, library javascript"
+  },
+  {
+    "percent": 83,
+    "imgSrc": "mysql",
+    "imgFullSrc": "mysql-(300)",
+    "caption": "MySQL, Database",
+    "gridStartPosition": "sm:col-start-1"
+  },
+  {
+    "percent": 55,
+    "imgSrc": "mongodb",
+    "imgFullSrc": "mongodb-(300)",
+    "caption": "MonggoDB, Database",
+    "gridStartPosition": "sm:col-start-4"
+  }
+]
