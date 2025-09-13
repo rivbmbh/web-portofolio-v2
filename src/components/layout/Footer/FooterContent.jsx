@@ -4,7 +4,6 @@ import {
   faGithub,
   faInstagram,
   faLinkedin,
-  faXTwitter,
 } from "@fortawesome/free-brands-svg-icons";
 import { iconSosmed } from "../../../js/style";
 const FooterContent = () => {
