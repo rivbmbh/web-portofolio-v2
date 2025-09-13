@@ -13,6 +13,6 @@ BUG :
 - perbaiki view modal CV ☑️
 - ganti nama link LinkInd di button let's connect modal ☑️
 - perbaiki close untuk gambar di skills, dimana close cukup tekan diluar gambar bukan di gambarnya☑️
-- perbaiki load component skillcircle dengan menggunakan map() pada Skills
-- perbaiki size gambar skills saat di fullview
+- perbaiki load component skillcircle dengan menggunakan map() pada Skills ☑️
+- perbaiki size gambar skills saat di fullview ☑️
 - perbaiki performa webnya

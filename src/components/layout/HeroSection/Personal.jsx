@@ -6,20 +6,22 @@ import HandPoint from "./HandPoint";
 
 const Personal = ({ isSmallScreen }) => {
   return (
-    <div className="self-center w-full pl-4 sm:pl-6 md:pl-8 lg:pl-10 lg:w-1/2 ">
-      <FloatingMessage />
-      <Introduce />
-      <Profession />
+    <>
+      <div className="self-center w-full pl-4 sm:pl-6 md:pl-8 lg:pl-10 lg:w-1/2 ">
+        <FloatingMessage />
+        <Introduce />
+        <Profession />
 
-      <div className="flex flex-wrap w-full gap-5 mt-14">
-        <HandPoint isSmallScreen={isSmallScreen} />
-        <ButtonConnect
-          url="#"
-          name="Let's Connect"
-          effect="active:scale-105 active:-rotate-3 transition-all ease-in-out duration-200 active:bg-emerald-700 hover:bg-emerald-700"
-        />
+        <div className="flex flex-wrap w-full gap-5 mt-14">
+          <HandPoint isSmallScreen={isSmallScreen} />
+          <ButtonConnect
+            url="#"
+            name="Let's Connect"
+            effect="active:scale-105 active:-rotate-3 transition-all ease-in-out duration-200 active:bg-emerald-700 hover:bg-emerald-700"
+          />
+        </div>
       </div>
-    </div>
+    </>
   );
 };
 

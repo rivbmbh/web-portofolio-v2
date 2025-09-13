@@ -29,11 +29,11 @@ const HeroSection = () => {
          min-h-[40vh]`}
       >
         <div className="container mx-auto sm:mx-0">
-          <div className="flex flex-wrap items-center justify-between gap-5 sm:gap-0">
+          <article className="flex flex-wrap items-center justify-between gap-5 sm:gap-0">
             <Personal isSmallScreen={isSmallScreen} />
 
             <Avatar />
-          </div>
+          </article>
         </div>
       </section>
     </>
