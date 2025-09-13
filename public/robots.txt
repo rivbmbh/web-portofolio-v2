@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+# Jangan index folder sensitif (contoh)
+Disallow: /assets/
+
+# Lokasi sitemap
+Sitemap: https://rivaldoangelobomboah.id/sitemap.xml
