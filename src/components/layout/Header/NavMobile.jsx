@@ -19,7 +19,7 @@ const NavMobile = ({ isOpenResume, setIsOpenResume }) => {
       {/* mobile screen */}
       <div className={`md:hidden relative mt-1 mt:mt-0`}>
         {/* hamburger button (mobile) */}
-        <button onClick={handleOpenNavMenu}>
+        <div onClick={handleOpenNavMenu}>
           <span
             className={`${hamburgerLine()} ${
               isOpenNavMenu ? "origin-top-left rotate-45" : ""
@@ -33,7 +33,7 @@ const NavMobile = ({ isOpenResume, setIsOpenResume }) => {
               isOpenNavMenu ? "origin-bottom-left -rotate-45" : ""
             }`}
           ></span>
-        </button>
+        </div>
 
         {/* nav menu mobile */}
         <AnimatePresence>

@@ -2,10 +2,8 @@
 - percantik header efek ketika scroll tambahkan bg-blur.☑️
 - perbaiki responsive keseluruhan.☑️
 - pada section about tambah sertifikat ☑️
+- fitur SEO agar mudah dicari☑️
 - jangan lupa lengkapi project sesuai foto dan deskripsinya
-- fitur rate by star yang masuk ke email.
-- tambahkan mode normal dan mode pixel.
-- fitur SEO agar mudah dicari
 
 BUG :
 - perbaiki modal project dimana ketika di zoom 125% btn X untuk close tidak bisa diklik☑️
@@ -15,4 +13,4 @@ BUG :
 - perbaiki close untuk gambar di skills, dimana close cukup tekan diluar gambar bukan di gambarnya☑️
 - perbaiki load component skillcircle dengan menggunakan map() pada Skills ☑️
 - perbaiki size gambar skills saat di fullview ☑️
-- perbaiki performa webnya
+- perbaiki performa webnya ☑️

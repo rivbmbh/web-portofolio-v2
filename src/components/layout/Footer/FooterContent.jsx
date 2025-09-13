@@ -3,6 +3,7 @@ import {
   faFacebook,
   faGithub,
   faInstagram,
+  faLinkedin,
   faXTwitter,
 } from "@fortawesome/free-brands-svg-icons";
 import { iconSosmed } from "../../../js/style";
@@ -16,17 +17,23 @@ const FooterContent = () => {
 
         {/* social media links */}
         <div className="flex flex-col items-center justify-center gap-4 xs:flex-row">
-          <a href="#">
+          <a target="_blank" href="https://github.com/rivbmbh">
             <FontAwesomeIcon icon={faGithub} className={iconSosmed()} />
           </a>
-          <a href="#">
-            <FontAwesomeIcon icon={faFacebook} className={iconSosmed()} />
+          <a
+            target="_blank"
+            href="https://www.linkedin.com/in/rivaldo-angelo-bomboah-9b9a20295?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+          >
+            <FontAwesomeIcon icon={faLinkedin} className={iconSosmed()} />
           </a>
-          <a href="#">
+          <a
+            target="_blank"
+            href="https://www.instagram.com/rivaldo_bomboah?igsh=emh0aGp1eGsyem1y"
+          >
             <FontAwesomeIcon icon={faInstagram} className={iconSosmed()} />
           </a>
-          <a href="#">
-            <FontAwesomeIcon icon={faXTwitter} className={iconSosmed()} />
+          <a target="_blank" href="https://www.facebook.com/share/17BADKtKup/">
+            <FontAwesomeIcon icon={faFacebook} className={iconSosmed()} />
           </a>
         </div>
       </div>
