@@ -19,7 +19,8 @@ const Avatar = () => {
          400px"
           alt="avatar"
           className="max-w-full w-80 min-[1280px]:w-[400px]"
-          loading="lazy"
+          fetchPriority="high"
+          decoding="async"
           onClick={() =>
             openImage("assets/img/rab-(400).webp", "Avatar Mr.RAB")
           }

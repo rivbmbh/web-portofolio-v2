@@ -14,3 +14,5 @@ BUG :
 - perbaiki load component skillcircle dengan menggunakan map() pada Skills ☑️
 - perbaiki size gambar skills saat di fullview ☑️
 - perbaiki performa webnya ☑️
+- perbaiki load pdf
+- ganti CDN font ke font face

@@ -20,9 +20,6 @@ const Certificate = () => {
   }
   return (
     <div className="w-full px-3 mt-10">
-      {/* <h2 className="mb-6 text-3xl font-semibold text-center sm:text-4xl">
-        Certificated
-      </h2> */}
       <div className="flex flex-wrap justify-center gap-8">
         {certificatedName.map((pdfName, index) => (
           <div key={index + pdfName}>
