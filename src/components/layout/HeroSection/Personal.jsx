@@ -12,7 +12,7 @@ const Personal = ({ isSmallScreen }) => {
         <Introduce />
         <Profession />
 
-        <div className="flex flex-wrap w-full gap-5 mt-14">
+        <div className="flex flex-wrap items-center w-full gap-5 mt-14">
           <HandPoint isSmallScreen={isSmallScreen} />
           <ButtonConnect
             url="#"
