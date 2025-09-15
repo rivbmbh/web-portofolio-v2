@@ -1,17 +1,15 @@
 import { useState } from "react";
 import ModalViewProject from "./ModalViewProject";
 
-const ProjectFolderIcon = ({ projectName, images, description, url }) => {
+const ProjectFolderIcon = ({ projectName, images, description, url = "" }) => {
   const [isOpen, setIsOpen] = useState(false);
-
   function handleOpenFolder() {
     setIsOpen((prev) => !prev);
-    // setIsOpen(true);
   }
   return (
     <>
       <div
-        className="flex flex-col items-center justify-center w-full mt-4 gap-x-1"
+        className="flex flex-col items-center justify-center w-3/4 mx-auto mt-4 gap-x-1"
         onClick={handleOpenFolder}
       >
         <img

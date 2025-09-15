@@ -1,0 +1,35 @@
+[
+  {
+    "projectName": "landing-page",
+    "imageName": "acv",
+    "totalImage": 4,
+    "description": "web static dari hasil belajar tailwindCSS"
+  },
+  {
+    "projectName": "dashboard-admin",
+    "imageName": "td",
+    "totalImage": 3,
+    "description": "Web agency Tuama Digital, dimana saya berkontribusi membangun web ini terutama pada bagian dashboard adminya",
+    "url": ["tuamadigital.com", "https://www.tuamadigital.id"]
+  },
+  {
+    "projectName": "sistem-kasir",
+    "imageName": "kasir",
+    "totalImage": 6,
+    "description": "Project ini saya buat dari mengikuti pelatihan dari dunia coding. Terdapat fitur payment with QRIS."
+  },
+  {
+    "projectName": "porta-berita",
+    "imageName": "wpb",
+    "totalImage": 2,
+    "description": "Real project yang pernah saya kerjakan dengan agency Tuama Digital, dimana saya mendapat bagian menangani halaman dashboard admin web ini",
+    "url": ["matajambi.com", "https://www.matajambi.com/"]
+  },
+  {
+    "projectName": "webgis",
+    "imageName": "wgis",
+    "totalImage": 5,
+    "description": "Project membuat sistem pemetaan kampung berbasis web dengan gabungan teknologi geografis",
+    "url": ["matajambi.com", "https://www.matajambi.com/"]
+  }
+]

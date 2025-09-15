@@ -1,7 +1,17 @@
 import ProjectFolderIcon from "./ProjectFolderIcon";
+import dataProjects from "/public/assets/data/projects";
 
 const Projects = () => {
   const pathProjectsImg = "/public/assets/projects/";
+
+  function showImages(totalImage, imgName) {
+    const images = [];
+    for (let i = 1; i <= totalImage; i++) {
+      images.push(`${pathProjectsImg}${imgName} (${i}).webp`);
+    }
+    return images;
+  }
+
   return (
     <>
       <section
@@ -16,87 +26,15 @@ const Projects = () => {
               projects I managed during my previous professional experience.
             </p>
             <div className="grid grid-cols-2 min-[390px]:grid-cols-3 gap-1 sm:grid-cols-4">
-              <ProjectFolderIcon
-                projectName={`web-asassincreed`}
-                images={[
-                  `${pathProjectsImg}acv (1).webp`,
-                  `${pathProjectsImg}acv (2).webp`,
-                  `${pathProjectsImg}acv (3).webp`,
-                  `${pathProjectsImg}acv (4).webp`,
-                ]}
-                description="web static dari hasil belajar tailwindCSS"
-              />
-              <ProjectFolderIcon
-                projectName={`dashboard-admin`}
-                images={[
-                  `${pathProjectsImg}td (1).webp`,
-                  `${pathProjectsImg}td (2).webp`,
-                  `${pathProjectsImg}td (3).webp`,
-                ]}
-                description="web perusahaan jasa pembuatan sistem berbasis web dan mobile, dimana saya berkontribusi membangun web ini terutama pada bagian dashboard adminya"
-                url={["tuamadigital.com", "https://www.tuamadigital.id"]}
-              />
-              <ProjectFolderIcon
-                projectName={`web-sporthub`}
-                images={[
-                  `${pathProjectsImg}acv (1).webp`,
-                  `${pathProjectsImg}acv (2).webp`,
-                  `${pathProjectsImg}acv (3).webp`,
-                  `${pathProjectsImg}acv (4).webp`,
-                ]}
-                description="loreem ipus mdafma njalfn ckm axl  fjndalfkmn"
-              />
-              <ProjectFolderIcon
-                projectName={`web-kasir`}
-                images={[
-                  `${pathProjectsImg}kasir (1).webp`,
-                  `${pathProjectsImg}kasir (2).webp`,
-                  `${pathProjectsImg}kasir (3).webp`,
-                  `${pathProjectsImg}kasir (4).webp`,
-                  `${pathProjectsImg}kasir (5).webp`,
-                  `${pathProjectsImg}kasir (6).webp`,
-                ]}
-                description="project ini saya buat dari mengikuti pelatihan dari dunia coding. Terdapat fitur payment with QRIS."
-              />
-              <ProjectFolderIcon
-                projectName={`web-analisis`}
-                images={[
-                  `${pathProjectsImg}acv (1).webp`,
-                  `${pathProjectsImg}acv (2).webp`,
-                  `${pathProjectsImg}acv (3).webp`,
-                  `${pathProjectsImg}acv (4).webp`,
-                ]}
-                description="loreem ipus mdafma njalfn ckm axl  fjndalfkmn"
-              />
-              <ProjectFolderIcon
-                projectName={`web-portal-berita`}
-                images={[
-                  `${pathProjectsImg}wpb (1).webp`,
-                  `${pathProjectsImg}wpb (2).webp`,
-                ]}
-                description="web ini saya bangun dengan tim Tuama Digital"
-                url={["matajambi.com", "https://www.matajambi.com/"]}
-              />
-              <ProjectFolderIcon
-                projectName={`webgis-kuma`}
-                images={[
-                  `${pathProjectsImg}acv (1).webp`,
-                  `${pathProjectsImg}acv (2).webp`,
-                  `${pathProjectsImg}acv (3).webp`,
-                  `${pathProjectsImg}acv (4).webp`,
-                ]}
-                description="loreem ipus mdafma njalfn ckm axl  fjndalfkmn"
-              />
-              <ProjectFolderIcon
-                projectName={`webgis-wisata`}
-                images={[
-                  `${pathProjectsImg}acv (1).webp`,
-                  `${pathProjectsImg}acv (2).webp`,
-                  `${pathProjectsImg}acv (3).webp`,
-                  `${pathProjectsImg}acv (4).webp`,
-                ]}
-                description="loreem ipus mdafma njalfn ckm axl  fjndalfkmn"
-              />
+              {dataProjects.map((data, index) => (
+                <ProjectFolderIcon
+                  key={index + data.imageName}
+                  projectName={data.projectName}
+                  images={showImages(data.totalImage, data.imageName)}
+                  description={data.description}
+                  url={data.url}
+                />
+              ))}
             </div>
           </article>
         </div>
