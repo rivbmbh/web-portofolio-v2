@@ -1,25 +1,25 @@
 [
   {
-    "projectName": "landing-page",
+    "projectName": "landing page",
     "imageName": "acv",
     "totalImage": 4,
     "description": "web static dari hasil belajar tailwindCSS"
   },
   {
-    "projectName": "dashboard-admin",
+    "projectName": "dashboard admin",
     "imageName": "td",
     "totalImage": 3,
     "description": "Web agency Tuama Digital, dimana saya berkontribusi membangun web ini terutama pada bagian dashboard adminya",
     "url": ["tuamadigital.com", "https://www.tuamadigital.id"]
   },
   {
-    "projectName": "sistem-kasir",
+    "projectName": "sistem kasir",
     "imageName": "kasir",
     "totalImage": 6,
     "description": "Project ini saya buat dari mengikuti pelatihan dari dunia coding. Terdapat fitur payment with QRIS."
   },
   {
-    "projectName": "porta-berita",
+    "projectName": "web porta berita",
     "imageName": "wpb",
     "totalImage": 2,
     "description": "Real project yang pernah saya kerjakan dengan agency Tuama Digital, dimana saya mendapat bagian menangani halaman dashboard admin web ini",
@@ -27,9 +27,14 @@
   },
   {
     "projectName": "webgis",
-    "imageName": "wgis",
-    "totalImage": 5,
-    "description": "Project membuat sistem pemetaan kampung berbasis web dengan gabungan teknologi geografis",
-    "url": ["matajambi.com", "https://www.matajambi.com/"]
+    "imageName": "wbgis",
+    "totalImage": 3,
+    "description": "Project pemetaan sebuah kampung tapi bagian yang saya ambil hanya implementasi web dengan data-data geografis"
+  },
+  {
+    "projectName": "peta kampung barangkalang",
+    "imageName": "barangkalang",
+    "totalImage": 1,
+    "description": "Project pembuatan peta kampung yang berbatasan langsung dengan hutan lindung yang ada di Kabupaten Kepulauan Sangihe"
   }
 ]

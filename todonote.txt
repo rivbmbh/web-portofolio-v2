@@ -3,7 +3,8 @@
 - perbaiki responsive keseluruhan.☑️
 - pada section about tambah sertifikat ☑️
 - fitur SEO agar mudah dicari☑️
-- jangan lupa lengkapi project sesuai foto dan deskripsinya
+- jangan lupa lengkapi project sesuai foto dan deskripsinya 
+- tambah project arcgis
 
 BUG :
 - perbaiki modal project dimana ketika di zoom 125% btn X untuk close tidak bisa diklik☑️
