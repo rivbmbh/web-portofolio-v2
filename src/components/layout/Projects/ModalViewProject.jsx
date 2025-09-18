@@ -10,7 +10,6 @@ const ModalViewProject = ({ caption, isClose, images = [], url = "" }) => {
   const scrollRef = useRef(null);
   const firstImgRef = useRef(null);
   const [scrollAmount, setScrollAmount] = useState(0);
-  console.info(images);
   useEffect(() => {
     if (firstImgRef.current) {
       setScrollAmount(firstImgRef.current.offsetWidth + 16); // +16 kalau ada gap

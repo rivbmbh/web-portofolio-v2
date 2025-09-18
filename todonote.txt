@@ -3,8 +3,10 @@
 - perbaiki responsive keseluruhan.☑️
 - pada section about tambah sertifikat ☑️
 - fitur SEO agar mudah dicari☑️
-- jangan lupa lengkapi project sesuai foto dan deskripsinya 
-- tambah project arcgis
+- tambah project arcgis ☑️
+- jangan lupa lengkapi project sesuai foto dan deskripsinya ☑️
+- tambah loading ketika memuat gambar dan CV
+- ubah scroling jangan pake html langsung tapi gunakan react useRef saja
 
 BUG :
 - perbaiki modal project dimana ketika di zoom 125% btn X untuk close tidak bisa diklik☑️
@@ -15,5 +17,6 @@ BUG :
 - perbaiki load component skillcircle dengan menggunakan map() pada Skills ☑️
 - perbaiki size gambar skills saat di fullview ☑️
 - perbaiki performa webnya ☑️
-- perbaiki load pdf
-- ganti CDN font ke font face
+- perbaiki load pdf ☑️
+- ganti CDN font ke font face☑️
+- perbaiki saat di production gambar-gambar project tidak tampil

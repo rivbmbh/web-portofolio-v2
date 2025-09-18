@@ -2,7 +2,7 @@ import ProjectFolderIcon from "./ProjectFolderIcon";
 import dataProjects from "/public/assets/data/projects";
 
 const Projects = () => {
-  const pathProjectsImg = "/public/assets/projects/";
+  const pathProjectsImg = "/assets/projects/";
 
   function showImages(totalImage, imgName) {
     const images = [];
