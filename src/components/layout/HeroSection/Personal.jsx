@@ -17,7 +17,7 @@ const Personal = ({ isSmallScreen }) => {
           <ButtonConnect
             url="#"
             name="Let's Connect"
-            effect="active:scale-105 active:-rotate-3 transition-all ease-in-out duration-200 active:bg-emerald-700 hover:bg-emerald-700"
+            effect="active:scale-105 active:-rotate-3 transition-all ease-in-out duration-200 active:bg-emerald-700 hover:bg-emerald-700 focus:scale-105 focus:-rotate-3 focus:bg-emerald-700 "
           />
         </div>
       </div>
