@@ -8,10 +8,10 @@ export default function ImageFullView() {
   const [loading, setLoading] = useState(true);
 
   const handleImageLoad = () => {
-    // setTimeout(() => {
-    //   setLoading(false);
-    // }, 5000);
-    setLoading(false);
+    setTimeout(() => {
+      setLoading(false);
+    }, 1500);
+    // setLoading(false);
   };
 
   if (!viewingImage) return null;

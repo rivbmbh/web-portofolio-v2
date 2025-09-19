@@ -5,7 +5,7 @@
 - fitur SEO agar mudah dicari☑️
 - tambah project arcgis ☑️
 - jangan lupa lengkapi project sesuai foto dan deskripsinya ☑️
-- tambah loading ketika memuat gambar dan CV
+- tambah loading ketika memuat gambar dan CV ☑️
 - ubah scroling jangan pake html langsung tapi gunakan react useRef saja
 
 BUG :
@@ -19,4 +19,4 @@ BUG :
 - perbaiki performa webnya ☑️
 - perbaiki load pdf ☑️
 - ganti CDN font ke font face☑️
-- perbaiki saat di production gambar-gambar project tidak tampil
+- perbaiki saat di production gambar-gambar project tidak tampil ☑️

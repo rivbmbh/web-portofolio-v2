@@ -11,9 +11,9 @@ const ViewResume = ({ setIsOpenResume }) => {
   const [loading, setLoading] = useState(true);
 
   function onDocumentLoadSuccess({ numPages }) {
-    setTimeout(() => {
-      setLoading(false);
-    }, 5000);
+    // setTimeout(() => {
+    // }, 5000);
+    setLoading(false);
     setNumPages(numPages);
   }
 
