@@ -7,7 +7,7 @@ const ViewLinks = ({ titleLink, fullLink, shortLink }) => {
       <a
         href={fullLink}
         target="_blank"
-        className="flex flex-col w-full gap-3 p-5 xs:flex-row xs:items-center hover:bg-gray-700 group"
+        className="flex flex-col w-full gap-3 p-5 xs:flex-row xs:items-center hover:bg-gray-700 active:bg-gray-700 group"
       >
         <div className="flex items-center justify-center w-3/12 px-2 py-2.5 border border-gray-700 xs:w-max">
           <FontAwesomeIcon
