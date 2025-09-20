@@ -22,15 +22,17 @@ const NavMobile = ({ isOpenResume, setIsOpenResume }) => {
         {/* hamburger button (mobile) */}
         <div onClick={handleOpenNavMenu}>
           <span
-            className={`${hamburgerLine()} ${
+            className={` transition duration-300 ease-in-out w-[31px] h-[2.5px] my-2 block dark:bg-white ${
               isOpenNavMenu ? "origin-top-left rotate-45" : ""
             }`}
           ></span>
           <span
-            className={`${hamburgerLine()} ${isOpenNavMenu ? "scale-0" : ""}`}
+            className={`transition duration-300 ease-in-out w-[31px] h-[2.5px] my-2 block dark:bg-white ${
+              isOpenNavMenu ? "scale-0" : ""
+            }`}
           ></span>
           <span
-            className={`${hamburgerLine()} ${
+            className={` transition duration-300 ease-in-out w-[31px] h-[2.5px] my-2 block dark:bg-white ${
               isOpenNavMenu ? "origin-bottom-left -rotate-45" : ""
             }`}
           ></span>
