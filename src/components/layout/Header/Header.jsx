@@ -27,7 +27,7 @@ const Header = ({ isOpenResume, setIsOpenResume }) => {
       >
         <div className={`flex justify-between items-center py-3 font-pixel `}>
           <div className={`text-4xl font-bold text-primary`}>
-            <a href="#" className="block">
+            <a href="#home" className="block">
               RAB
             </a>
           </div>

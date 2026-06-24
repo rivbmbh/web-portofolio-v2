@@ -6,7 +6,9 @@
 - tambah project arcgis ☑️
 - jangan lupa lengkapi project sesuai foto dan deskripsinya ☑️
 - tambah loading ketika memuat gambar dan CV ☑️
-- ubah scroling jangan pake html langsung tapi gunakan react useRef saja
+- ubah scroling jangan pake html langsung tapi gunakan react useRef saja ☑️
+- tambah rest API untuk backend 
+- tambah load more di sertifikat dan projects
 
 BUG :
 - perbaiki modal project dimana ketika di zoom 125% btn X untuk close tidak bisa diklik☑️

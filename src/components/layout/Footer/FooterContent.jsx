@@ -16,7 +16,7 @@ const FooterContent = () => {
       label: "LinkedIn",
     },
     {
-      href: "https://www.instagram.com/rivaldo_bomboah?igsh=emh0aGp1eGsyem1y",
+      href: "https://www.instagram.com/rivaldobenjamin_",
       icon: faInstagram,
       label: "Instagram",
     },

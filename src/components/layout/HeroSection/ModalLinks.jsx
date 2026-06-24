@@ -22,8 +22,8 @@ const ModalLinks = ({ handleOpenModalLinks }) => {
           <div className="text-lg">
             <ViewLinks
               titleLink="Instagram"
-              fullLink="https://www.instagram.com/rivaldo_b13"
-              shortLink="www.instagram.com/rivaldo_b13"
+              fullLink="https://www.instagram.com/rivaldobenjamin_"
+              shortLink="www.instagram.com/rivaldo_benjamin"
             />
             <div className="border-t border-t-slate-700"></div>
             <ViewLinks
