@@ -11,6 +11,7 @@ const Certificate = () => {
     "ms_excel",
     "webdev_kominfo",
     "webgis",
+    "sertifikat_belajar_AI_dasar",
   ];
   const [numPages, setNumPages] = useState();
   const [pageNumber] = useState(1);
