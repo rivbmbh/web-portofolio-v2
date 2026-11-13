@@ -8,8 +8,8 @@ const SkillCircle = ({
   imgSrc,
   imgFullSrc,
   caption = "",
-  strokeColor = "text-gray-500",
-  gridStartPosition = "",
+  // strokeColor = "text-gray-500",
+  // gridStartPosition = "",
 }) => {
   const circleRef = useRef(null);
   const offset = 100 - percent;
@@ -24,16 +24,16 @@ const SkillCircle = ({
         strokeDashoffset: offset,
         duration: 3,
         ease: "power.inOut(2.7)",
-      }
+      },
     );
   }, [start, offset]);
 
   return (
     <>
       <div
-        className={`relative flex items-center justify-center w-24 h-24 mx-auto ${gridStartPosition}`}
+        className={`relative flex items-center justify-center-safe w-16 h-16 sm:w-18 sm:h-18 mx-auto`}
       >
-        <svg
+        {/* <svg
           className="w-full h-full transform -rotate-90 text-slate-800"
           viewBox="0 0 36 36"
         >
@@ -59,9 +59,10 @@ const SkillCircle = ({
             strokeDasharray="100"
             strokeDashoffset="100"
           />
-        </svg>
-        <div className="absolute w-[74%] h-[74%] overflow-hidden rounded-full">
+        </svg> */}
+        <div className="absolute w-[36%] h-[36%] sm:w-[48%] sm:h-[48%] overflow-hidden">
           <img
+            rel="preload"
             src={imgSrc}
             alt="icon"
             className="object-contain"
