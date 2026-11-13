@@ -25,7 +25,7 @@ export default function ImageFullView() {
       <img
         src={viewingImage}
         alt="Zoomed"
-        className={`max-w-[90%] max-h-[90%] w-[44%] rounded shadow-xl transition-all duration-300 ${
+        className={`max-w-[90%] max-h-[90%] w-[20%] sm:w-[14%] rounded shadow-xl transition-all duration-300 ${
           loading ? "opacity-0 hidden" : "opacity-100 block"
         }`}
         onClick={closeImage}

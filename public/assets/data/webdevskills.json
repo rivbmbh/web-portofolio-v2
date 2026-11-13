@@ -47,13 +47,13 @@
     "gridStartPosition": "sm:col-start-2"
   },
   {
-    "percent": 75,
+    "percent": 80,
     "imgSrc": "react",
     "imgFullSrc": "react-large",
     "caption": "ReactJS, library javascript"
   },
   {
-    "percent": 83,
+    "percent": 90,
     "imgSrc": "mysql",
     "imgFullSrc": "mysql-large",
     "caption": "MySQL, Database",
@@ -67,49 +67,49 @@
     "gridStartPosition": "sm:col-start-4"
   },
   {
-    "percent": 55,
+    "percent": 60,
     "imgSrc": "nextjs",
     "imgFullSrc": "nextjs-large",
     "caption": "NextJS, frontend web framework",
     "gridStartPosition": "sm:col-start-4"
   },
   {
-    "percent": 55,
+    "percent": 100,
     "imgSrc": "html",
     "imgFullSrc": "html-large",
     "caption": "HTML5, Hypertext Markup Language for build structure website",
     "gridStartPosition": "sm:col-start-4"
   },
   {
-    "percent": 55,
+    "percent": 100,
     "imgSrc": "css",
     "imgFullSrc": "css-large",
     "caption": "CSS3, Cascading Style Sheet for styling UI website",
     "gridStartPosition": "sm:col-start-4"
   },
   {
-    "percent": 55,
+    "percent": 50,
     "imgSrc": "postgresql",
     "imgFullSrc": "postgresql-large",
     "caption": "PostgreSQL, database",
     "gridStartPosition": "sm:col-start-4"
   },
   {
-    "percent": 55,
+    "percent": 70,
     "imgSrc": "google-antigravity",
     "imgFullSrc": "google-antigravity-large",
     "caption": "Antigravity, text editor with google gemini AI for build website",
     "gridStartPosition": "sm:col-start-4"
   },
   {
-    "percent": 55,
+    "percent": 100,
     "imgSrc": "vsc",
     "imgFullSrc": "vsc-large",
     "caption": "Visual Studio Code, text editor for build website",
     "gridStartPosition": "sm:col-start-4"
   },
   {
-    "percent": 55,
+    "percent": 60,
     "imgSrc": "express",
     "imgFullSrc": "express-large",
     "caption": "Visual Studio Code, text editor for build website",

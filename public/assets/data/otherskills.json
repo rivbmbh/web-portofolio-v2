@@ -48,7 +48,7 @@
     "gridStartPosition": "sm:col-start-3"
   },
   {
-    "percent": 55,
+    "percent": 60,
     "imgSrc": "ubuntu",
     "imgFullSrc": "ubuntu-large",
     "caption": "Linux Ubuntu, operating system",

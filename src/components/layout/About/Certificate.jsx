@@ -9,9 +9,12 @@ const Certificate = () => {
     "database_administrator",
     "devops_dicoding",
     "ms_excel",
+    "english_basic",
     "webdev_kominfo",
     "webgis",
     "sertifikat_belajar_AI_dasar",
+    "ai_for_work",
+    "ai_api_intergration",
   ];
   const [numPages, setNumPages] = useState();
   const [pageNumber] = useState(1);
@@ -30,7 +33,7 @@ const Certificate = () => {
               rel="noopener noreferrer"
               className="relative block text-white group w-max"
             >
-              <div className="overflow-hidden h-[141px] w-max font-pixel group-hover:scale-105 transition-all ease-in-out duration-300">
+              <div className="overflow-hidden h-35.25 w-max font-pixel group-hover:scale-105 transition-all ease-in-out duration-300">
                 <Document
                   file={`/assets/certificate/${pdfName}.pdf`}
                   onLoadSuccess={onDocumentLoadSuccess}

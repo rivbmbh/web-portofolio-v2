@@ -8,7 +8,7 @@ const SkillCircle = ({
   imgSrc,
   imgFullSrc,
   caption = "",
-  // strokeColor = "text-gray-500",
+  strokeColor = "text-slate-500",
   // gridStartPosition = "",
 }) => {
   const circleRef = useRef(null);
@@ -31,14 +31,23 @@ const SkillCircle = ({
   return (
     <>
       <div
-        className={`relative flex items-center justify-center-safe w-16 h-16 sm:w-18 sm:h-18 mx-auto`}
+        className={` relative flex items-center justify-center-safe w-16 h-16 sm:w-18 sm:h-18 mx-auto`}
       >
-        {/* <svg
+        <svg
           className="w-full h-full transform -rotate-90 text-slate-800"
           viewBox="0 0 36 36"
         >
+          {/* <defs>
+            <filter id="glow">
+              <feGaussianBlur stdDeviation="2" result="blur" />
+              <feMerge>
+                <feMergeNode in="blur" />
+                <feMergeNode in="SourceGraphic" />
+              </feMerge>
+            </filter>
+          </defs> */}
           <circle
-            className="bg-transparent"
+            className="fill-current"
             stroke="currentColor"
             strokeWidth="4"
             fill="none"
@@ -59,7 +68,7 @@ const SkillCircle = ({
             strokeDasharray="100"
             strokeDashoffset="100"
           />
-        </svg> */}
+        </svg>
         <div className="absolute w-[36%] h-[36%] sm:w-[48%] sm:h-[48%] overflow-hidden">
           <img
             rel="preload"

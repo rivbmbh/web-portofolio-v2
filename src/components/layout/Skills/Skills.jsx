@@ -26,7 +26,7 @@ const Skills = () => {
         start={triggered}
         percent={percent}
         imgSrc={`/assets/icons-tools-programming-language/${imgSrc}.avif`}
-        imgFullSrc={`/assets/img/${imgFullSrc}.webp`}
+        imgFullSrc={`/assets/icons-tools-programming-language/${imgFullSrc}.avif`}
         caption={caption}
         // gridStartPosition={gridStartPosition}
       />
@@ -64,7 +64,7 @@ const Skills = () => {
               </h2>
 
               {/* circle tools/programming language */}
-              <div className="grid w-full grid-cols-1 min-[200px]:grid-cols-2 xs:grid-cols-3 gap-0 min-[770px]:grid-cols-3 lg:grid-cols-4 ">
+              <div className="grid w-full grid-cols-1 min-[200px]:grid-cols-2 xs:grid-cols-3 gap-8 xs:gap-2 min-[770px]:gap-8 lg:gap-4 min-[770px]:grid-cols-3 lg:grid-cols-4 ">
                 {webdevSkills.map((data, index) =>
                   addSkill(
                     data + index,
