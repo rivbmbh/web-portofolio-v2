@@ -2,16 +2,7 @@ import ProjectFolderIcon from "./ProjectFolderIcon";
 import dataProjects from "/public/assets/data/projects";
 
 const Projects = () => {
-  const pathProjectsImg = "/assets/projects/";
-
-  function showImages(totalImage, imgName) {
-    const images = [];
-    for (let i = 1; i <= totalImage; i++) {
-      images.push(`${pathProjectsImg}${imgName} (${i}).webp`);
-    }
-    return images;
-  }
-
+  console.info(dataProjects);
   return (
     <>
       <section
@@ -25,14 +16,15 @@ const Projects = () => {
               Presented below are independent projects, client engagements, and
               projects I managed during my previous professional experience.
             </p>
-            <div className="grid grid-cols-2 min-[390px]:grid-cols-3 gap-1 sm:grid-cols-4">
+            <div className="flex flex-wrap items-center justify-center gap-2 mt-3">
               {dataProjects.map((data, index) => (
                 <ProjectFolderIcon
                   key={index + data.imageName}
                   projectName={data.projectName}
-                  images={showImages(data.totalImage, data.imageName)}
+                  imageName={data.imageName}
                   description={data.description}
                   url={data.url}
+                  technology={data.tech}
                 />
               ))}
             </div>

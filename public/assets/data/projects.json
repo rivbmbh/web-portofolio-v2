@@ -1,40 +1,23 @@
 [
   {
-    "projectName": "landing page",
-    "imageName": "acv",
-    "totalImage": 4,
-    "description": "web static dari hasil belajar tailwindCSS"
+    "projectName": "Web Hotel",
+    "imageName": "web-hotel",
+    "description": "Web hotel dengan dua sistem pemesanan via denah hotel dengan dapat memilih nomor kamar atau dengan cara umum tapi dengan nomor kamar acak",
+    "url": "https://exo-hotel.vercel.app/",
+    "tech": "nextjs, tailwindcss, typescript, prisma, postgresql"
   },
   {
-    "projectName": "dashboard admin",
-    "imageName": "td",
-    "totalImage": 3,
-    "description": "Web agency Tuama Digital, dimana saya berkontribusi membangun web ini terutama pada bagian dashboard adminya",
-    "url": ["tuamadigital.com", "https://www.tuamadigital.id"]
+    "projectName": "Web Cek Followers IG",
+    "imageName": "web-instacik",
+    "description": "Web cek followers maupun following di instagram untuk mengecek siapa yang kita follow dan tidak follback kita ataupun sebaliknya",
+    "url": "https://instacik.vercel.app/",
+    "tech": "vite, reactjs, tailwindcss"
   },
   {
-    "projectName": "sistem kasir",
-    "imageName": "kasir",
-    "totalImage": 6,
-    "description": "Project ini saya buat dari mengikuti pelatihan dari dunia coding. Terdapat fitur payment with QRIS."
-  },
-  {
-    "projectName": "web porta berita",
-    "imageName": "wpb",
-    "totalImage": 2,
-    "description": "Real project yang pernah saya kerjakan dengan agency Tuama Digital, dimana saya mendapat bagian menangani halaman dashboard admin web ini",
-    "url": ["matajambi.com", "https://www.matajambi.com/"]
-  },
-  {
-    "projectName": "webgis",
-    "imageName": "wbgis",
-    "totalImage": 3,
-    "description": "Project pemetaan sebuah kampung tapi bagian yang saya ambil hanya implementasi web dengan data-data geografis"
-  },
-  {
-    "projectName": "peta kampung barangkalang",
-    "imageName": "barangkalang",
-    "totalImage": 1,
-    "description": "Project pembuatan peta kampung yang berbatasan langsung dengan hutan lindung yang ada di Kabupaten Kepulauan Sangihe"
+    "projectName": "Web Kost",
+    "imageName": "web-kost",
+    "description": "Web profile sebuah kos-kosan sederhana dengan data dummy belum diintergrasikan dengan payment gateaway",
+    "url": "https://cozyclabat.vercel.app/",
+    "tech": "vite, reactjs, tailwindcss"
   }
 ]

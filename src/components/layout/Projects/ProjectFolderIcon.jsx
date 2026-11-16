@@ -1,7 +1,13 @@
 import { useState } from "react";
 import ModalViewProject from "./ModalViewProject";
 
-const ProjectFolderIcon = ({ projectName, images, description, url = "" }) => {
+const ProjectFolderIcon = ({
+  projectName,
+  imageName,
+  description,
+  url = " ",
+  technology,
+}) => {
   const [isOpen, setIsOpen] = useState(false);
   function handleOpenFolder() {
     setIsOpen((prev) => !prev);
@@ -9,23 +15,26 @@ const ProjectFolderIcon = ({ projectName, images, description, url = "" }) => {
   return (
     <>
       <div
-        className="flex flex-col items-center justify-center w-3/4 mx-auto mt-4 gap-x-1"
+        className="flex flex-col items-center justify-center mx-auto mt-8"
         onClick={handleOpenFolder}
       >
         <img
-          src={`/assets/img/folder-${isOpen ? "open" : "close"}.webp`}
+          // src={`/assets/img/folder-${isOpen ? "open" : "close"}.webp`}
+          src={`/assets/projects/icon/${imageName}.avif`}
           alt="path"
-          className={`w-20 h-20 nonview hover:grayscale-75 transition-all ease-in-out duration-500`}
+          className={`w-[64%] nonview hover:grayscale-75 transition-all ease-in-out duration-500`}
           loading="lazy"
         />
-        <p className="text-center text-md">{projectName}</p>
+        <p className="mt-3 text-center text-[16px]">{projectName}</p>
       </div>
       {isOpen && (
         <ModalViewProject
-          caption={[projectName, description]}
+          projectName={projectName}
+          description={description}
           isClose={handleOpenFolder}
-          images={images}
+          image={imageName}
           url={url}
+          tech={technology}
         />
       )}
     </>

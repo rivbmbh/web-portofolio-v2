@@ -36,8 +36,13 @@ function App() {
 
             <HeroSection />
             <About />
-            <Skills />
             <Projects />
+            <Skills />
+            {/* <img
+              src={`/assets/web-instacik.avif`}
+              alt=""
+              className="w-[20%] h-auto p-10 mx-auto"
+            /> */}
             <ScrollBackToTop />
             <Footer
               isOpenResume={isOpenResume}
