@@ -13,6 +13,7 @@ import ScrollBackToTop from "./components/common/Scroll/ScrollBackToTop";
 import Projects from "./components/layout/Projects";
 import About from "./components/layout/About";
 import Certificates from "./components/layout/Certificates";
+import { LanguageProvider } from "./components/common/Language/LanguageContext";
 
 function App() {
   const [isOpenResume, setIsOpenResume] = useState(false);
@@ -22,30 +23,32 @@ function App() {
       <ScrollTriggerProvider>
         <ImageFullViewProvider>
           <ActiveSectionProvider>
-            <Header
-              isOpenResume={isOpenResume}
-              setIsOpenResume={setIsOpenResume}
-            />
-
-            {/* Resume */}
-            {isOpenResume && (
-              <ViewResume
+            <LanguageProvider>
+              <Header
                 isOpenResume={isOpenResume}
                 setIsOpenResume={setIsOpenResume}
               />
-            )}
 
-            <HeroSection />
-            <About />
-            <Certificates />
-            <Skills />
-            <Projects />
-            <ScrollBackToTop />
-            <Footer
-              isOpenResume={isOpenResume}
-              setIsOpenResume={setIsOpenResume}
-            />
-            <ImageFullView />
+              {/* Resume */}
+              {isOpenResume && (
+                <ViewResume
+                  isOpenResume={isOpenResume}
+                  setIsOpenResume={setIsOpenResume}
+                />
+              )}
+
+              <HeroSection />
+              <About />
+              <Certificates />
+              <Skills />
+              <Projects />
+              <ScrollBackToTop />
+              <Footer
+                isOpenResume={isOpenResume}
+                setIsOpenResume={setIsOpenResume}
+              />
+              <ImageFullView />
+            </LanguageProvider>
           </ActiveSectionProvider>
         </ImageFullViewProvider>
       </ScrollTriggerProvider>

@@ -10,7 +10,7 @@ export default function ImageFullView() {
   const handleImageLoad = () => {
     setTimeout(() => {
       setLoading(false);
-    }, 1500);
+    });
     // setLoading(false);
   };
 

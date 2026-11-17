@@ -4,9 +4,20 @@ import { useActiveSection } from "../../common/Effect/ActiveSectionContext";
 import { motion, AnimatePresence } from "framer-motion";
 import ButtonResume from "../../common/Button/ButtonResume";
 import useScrollTo from "../../common/Hooks/useScrollTo";
+import ChooseLanguage from "../../common/Language/ChooseLanguage";
+import { useLanguage } from "../../common/Language/LanguageContext";
 
 const NavMobile = ({ isOpenResume, setIsOpenResume }) => {
-  const sections = ["home", "about", "skills", "projects"];
+  const { isEnglish } = useLanguage();
+  const sectionEN = ["home", "about", "certificates", "skills", "projects"];
+  const sectionID = [
+    "beranda",
+    "tentang saya",
+    "sertifikasi",
+    "Keahlian",
+    "proyek",
+  ];
+  const sections = isEnglish ? sectionEN : sectionID;
   const activeSection = useActiveSection();
   const [isOpenNavMenu, setIsOpenNavMenu] = useState(false);
   const scrollTo = useScrollTo(70);
@@ -19,23 +30,26 @@ const NavMobile = ({ isOpenResume, setIsOpenResume }) => {
     <>
       {/* mobile screen */}
       <div className={`md:hidden relative mt-1 mt:mt-0`}>
-        {/* hamburger button (mobile) */}
-        <div onClick={handleOpenNavMenu}>
-          <span
-            className={` transition duration-300 ease-in-out w-[31px] h-[2.5px] my-2 block dark:bg-white ${
-              isOpenNavMenu ? "origin-top-left rotate-45" : ""
-            }`}
-          ></span>
-          <span
-            className={`transition duration-300 ease-in-out w-[31px] h-[2.5px] my-2 block dark:bg-white ${
-              isOpenNavMenu ? "scale-0" : ""
-            }`}
-          ></span>
-          <span
-            className={` transition duration-300 ease-in-out w-[31px] h-[2.5px] my-2 block dark:bg-white ${
-              isOpenNavMenu ? "origin-bottom-left -rotate-45" : ""
-            }`}
-          ></span>
+        <div className="flex items-center justify-center gap-5">
+          <ChooseLanguage />
+          {/* hamburger button (mobile) */}
+          <div onClick={handleOpenNavMenu}>
+            <span
+              className={` transition duration-300 ease-in-out w-[31px] h-[2.5px] my-2 block dark:bg-white ${
+                isOpenNavMenu ? "origin-top-left rotate-45" : ""
+              }`}
+            ></span>
+            <span
+              className={`transition duration-300 ease-in-out w-[31px] h-[2.5px] my-2 block dark:bg-white ${
+                isOpenNavMenu ? "scale-0" : ""
+              }`}
+            ></span>
+            <span
+              className={` transition duration-300 ease-in-out w-[31px] h-[2.5px] my-2 block dark:bg-white ${
+                isOpenNavMenu ? "origin-bottom-left -rotate-45" : ""
+              }`}
+            ></span>
+          </div>
         </div>
 
         {/* nav menu mobile */}

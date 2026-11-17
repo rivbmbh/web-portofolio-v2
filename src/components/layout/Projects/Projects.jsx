@@ -1,8 +1,9 @@
+import { useLanguage } from "../../common/Language/LanguageContext";
 import ProjectFolderIcon from "./ProjectFolderIcon";
 import dataProjects from "/public/assets/data/projects";
 
 const Projects = () => {
-  console.info(dataProjects);
+  const { isEnglish } = useLanguage();
   return (
     <>
       <section
@@ -11,10 +12,13 @@ const Projects = () => {
       >
         <div className="container mx-auto">
           <article>
-            <h2 className="text-4xl font-bold text-center">Projects</h2>
+            <h2 className="text-4xl font-bold text-center">
+              {isEnglish ? "Projects" : "Proyek"}
+            </h2>
             <p className="mt-3 text-base text-center">
-              Presented below are independent projects, client engagements, and
-              projects I managed during my previous professional experience.
+              {isEnglish
+                ? "Presented below are independent projects, client engagements, and projects I managed during my previous professional experience."
+                : "Berikut adalah proyek independen, pekerjaan bersama klien, serta proyek yang saya kelola selama pengalaman profesional sebelumnya."}
             </p>
             <div className="flex flex-wrap items-center justify-center gap-2 mt-3">
               {dataProjects.map((data, index) => (

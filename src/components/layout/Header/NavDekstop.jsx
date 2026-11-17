@@ -2,9 +2,20 @@ import { effectNav } from "../../../js/style";
 import ButtonResume from "../../common/Button/ButtonResume";
 import { useActiveSection } from "../../common/Effect/ActiveSectionContext";
 import useScrollTo from "../../common/Hooks/useScrollTo";
+import ChooseLanguage from "../../common/Language/ChooseLanguage";
+import { useLanguage } from "../../common/Language/LanguageContext";
 
 const NavDekstop = ({ isOpenResume, setIsOpenResume }) => {
-  const sections = ["home", "about", "skills", "projects"];
+  const { isEnglish } = useLanguage();
+  const sectionEN = ["home", "about", "certificates", "skills", "projects"];
+  const sectionID = [
+    "beranda",
+    "tentang saya",
+    "sertifikasi",
+    "Keahlian",
+    "proyek",
+  ];
+  const sections = isEnglish ? sectionEN : sectionID;
   const activeSection = useActiveSection();
   const scrollTo = useScrollTo(70);
 
@@ -24,6 +35,8 @@ const NavDekstop = ({ isOpenResume, setIsOpenResume }) => {
             {section}
           </button>
         ))}
+
+        <ChooseLanguage />
 
         <ButtonResume
           name="Resume"

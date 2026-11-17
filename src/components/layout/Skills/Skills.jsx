@@ -3,8 +3,10 @@ import { useScrollTrigger } from "../../common/Scroll/ScrollTriggerContext";
 import SkillSquare from "./SkillSquare";
 import webdevSkills from "/public/assets/data/webdevskills.json";
 import otherSkills from "/public/assets/data/otherskills.json";
+import { useLanguage } from "../../common/Language/LanguageContext";
 
 const Skills = () => {
+  const { isEnglish } = useLanguage();
   const { ScrollTrigger } = useScrollTrigger();
   const containerRef = useRef(null);
   const [triggered, setTriggered] = useState(false);
@@ -57,10 +59,23 @@ const Skills = () => {
         className="w-full gap-10 px-2 mt-5 mb-20 text-white font-pixel"
       >
         <div className="container mx-auto">
+          <div className="flex flex-col items-center justify-center w-full mb-5 sm:px-4 md:px-8">
+            <p className="mb-3 text-3xl font-bold sm:text-4xl text-center min-[770px]:text-start ">
+              {isEnglish ? "Skills" : "Keahlian"}
+            </p>
+            <p className="font-normal text-center">
+              {isEnglish
+                ? "Here are my skills, divided into two main categories, along with the software, applications, and programming languages that I have developed a solid level of proficiency in."
+                : "Berikut Keahlian saya yang terbagi dua bagian dengan menyertai software, applikasi serta bahasa pemograman yang sudah saya rasa cukup kuasai"}
+            </p>
+          </div>
           <article className="flex flex-col justify-between min-[770px]:gap-2">
             <div className="flex flex-col items-center justify-center w-full">
-              <h2 className="mb-10 text-3xl font-semibold sm:text-4xl text-center min-[770px]:text-start">
-                Web developer skills
+              <h2 className="mb-10 text-2xl font-semibold sm:text-3xl text-center min-[770px]:text-start">
+                *{" "}
+                {isEnglish
+                  ? "Web Development Skill"
+                  : "Keahlian Mengembangkan Website"}
               </h2>
 
               {/* circle tools/programming language */}
@@ -78,8 +93,8 @@ const Skills = () => {
               </div>
             </div>
             <div className="flex flex-col items-center justify-center w-full">
-              <h2 className="mb-10 text-3xl font-semibold sm:text-4xl text-center min-[770px]:text-start ">
-                Other skills and tools
+              <h2 className="mb-10 text-2xl font-semibold sm:text-3xl text-center min-[770px]:text-start ">
+                * {isEnglish ? "Other skills" : "Keahlian lainnya"}
               </h2>
 
               {/* circle other skills */}

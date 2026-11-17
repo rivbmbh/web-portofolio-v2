@@ -3,8 +3,11 @@ import Profession from "./Profession";
 import Introduce from "./Introduce";
 import FloatingMessage from "./FloatingMessage";
 import HandPoint from "./HandPoint";
+import { useLanguage } from "../../common/Language/LanguageContext";
 
 const Personal = ({ isSmallScreen }) => {
+  const { isEnglish } = useLanguage();
+  const title = isEnglish ? "Let's Connect" : "Temukan Saya";
   return (
     <>
       <div className="self-center w-full pl-4 sm:pl-6 md:pl-8 lg:pl-10 lg:w-1/2 ">
@@ -16,7 +19,7 @@ const Personal = ({ isSmallScreen }) => {
           <HandPoint isSmallScreen={isSmallScreen} />
           <ButtonConnect
             url="#"
-            name="Let's Connect"
+            name={title}
             effect="active:scale-105 active:-rotate-3 transition-all ease-in-out duration-200 active:bg-emerald-700 hover:bg-emerald-700 focus:scale-105 focus:-rotate-3 focus:bg-emerald-700 "
           />
         </div>

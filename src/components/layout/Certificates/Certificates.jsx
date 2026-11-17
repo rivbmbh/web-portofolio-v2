@@ -1,9 +1,11 @@
 import { useState } from "react";
 import { Document, Page, pdfjs } from "react-pdf";
+import { useLanguage } from "../../common/Language/LanguageContext";
 
 pdfjs.GlobalWorkerOptions.workerSrc = `//unpkg.com/pdfjs-dist@${pdfjs.version}/build/pdf.worker.min.mjs`;
 
 const Certificates = () => {
+  const { isEnglish } = useLanguage();
   const certificatedName = [
     "js_dicoding",
     "database_administrator",
@@ -25,15 +27,16 @@ const Certificates = () => {
   return (
     <section
       id="certificates"
-      className={`px-10 pb-10 text-white mb-29 font-pixel`}
+      className={`px-10 pb-10 text-white mb-18 font-pixel`}
     >
       <div className="w-full px-3 mt-10">
         <h2 className="mb-5 text-3xl font-semibold text-center sm:text-4xl">
-          Certificates
+          {isEnglish ? "Certificates" : "Sertifikasi"}
         </h2>
         <p className="mb-5 text-base text-center sm:px-4">
-          As part of this learning journey, below I’ve included several
-          certificates from trainings and programs I’ve completed.
+          {isEnglish
+            ? "This demonstrates my continued commitment to learning new things and expanding my skills, not only in programming but also in other areas beyond technology."
+            : "Berikut ini tanda bahwa saya masih aktif belajar hal baru serta memperdalam Keahlian saya, dan tidak hanya terbatas pada programming tetapi juga di luar itu saya juga pelajari."}
         </p>
         <div className="flex flex-wrap justify-center gap-8">
           {certificatedName.map((pdfName, index) => (
