@@ -12,6 +12,7 @@ import { ActiveSectionProvider } from "./components/common/Effect/ActiveSectionC
 import ScrollBackToTop from "./components/common/Scroll/ScrollBackToTop";
 import Projects from "./components/layout/Projects";
 import About from "./components/layout/About";
+import Certificates from "./components/layout/Certificates";
 
 function App() {
   const [isOpenResume, setIsOpenResume] = useState(false);
@@ -36,13 +37,9 @@ function App() {
 
             <HeroSection />
             <About />
-            <Projects />
+            <Certificates />
             <Skills />
-            {/* <img
-              src={`/assets/web-instacik.avif`}
-              alt=""
-              className="w-[20%] h-auto p-10 mx-auto"
-            /> */}
+            <Projects />
             <ScrollBackToTop />
             <Footer
               isOpenResume={isOpenResume}
