@@ -2,7 +2,6 @@ import { createContext, useContext, useState } from "react";
 
 const ImageFullViewContext = createContext();
 
-// eslint-disable-next-line react-refresh/only-export-components
 export const useImageFullView = () => useContext(ImageFullViewContext);
 
 export const ImageFullViewProvider = ({ children }) => {

@@ -1,6 +1,8 @@
-import { useState, lazy, Suspense } from "react";
+// src/App.jsx
 import Header from "./components/layout/Header";
 import HeroSection from "./components/layout/HeroSection";
+import { useState } from "react";
+import ViewResume from "./components/common/Modal/ViewResume";
 import Skills from "./components/layout/Skills/Skills";
 import { ImageFullViewProvider } from "./components/common/Modal/ImageFullViewContext";
 import ImageFullView from "./components/common/Modal/ImageFullView";
@@ -12,8 +14,6 @@ import Projects from "./components/layout/Projects";
 import About from "./components/layout/About";
 import Certificates from "./components/layout/Certificates";
 import { LanguageProvider } from "./components/common/Language/LanguageContext";
-
-const ViewResume = lazy(() => import("./components/common/Modal/ViewResume"));
 
 function App() {
   const [isOpenResume, setIsOpenResume] = useState(false);
@@ -29,14 +29,12 @@ function App() {
                 setIsOpenResume={setIsOpenResume}
               />
 
-              {/* Resume (Lazy loaded only on click) */}
+              {/* Resume */}
               {isOpenResume && (
-                <Suspense fallback={null}>
-                  <ViewResume
-                    isOpenResume={isOpenResume}
-                    setIsOpenResume={setIsOpenResume}
-                  />
-                </Suspense>
+                <ViewResume
+                  isOpenResume={isOpenResume}
+                  setIsOpenResume={setIsOpenResume}
+                />
               )}
 
               <HeroSection />

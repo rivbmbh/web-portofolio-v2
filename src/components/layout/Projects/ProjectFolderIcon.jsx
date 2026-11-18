@@ -15,22 +15,14 @@ const ProjectFolderIcon = ({
   return (
     <>
       <div
-        role="button"
-        tabIndex={0}
-        aria-label={`Buka detail proyek ${projectName}`}
-        className="flex flex-col items-center justify-center mx-auto mt-8 cursor-pointer focus:outline-none"
+        className="flex flex-col items-center justify-center mx-auto mt-8"
         onClick={handleOpenFolder}
-        onKeyDown={(e) => {
-          if (e.key === "Enter" || e.key === " ") {
-            e.preventDefault();
-            handleOpenFolder();
-          }
-        }}
       >
         <img
+          // src={`/assets/img/folder-${isOpen ? "open" : "close"}.webp`}
           src={`/assets/projects/icon/${imageName}.avif`}
-          alt={`Folder icon for ${projectName}`}
-          className="w-[64%] nonview hover:grayscale-75 transition-all ease-in-out duration-500"
+          alt="path"
+          className={`w-[64%] nonview hover:grayscale-75 transition-all ease-in-out duration-500`}
           loading="lazy"
         />
         <p className="mt-3 text-center text-[16px]">{projectName}</p>
