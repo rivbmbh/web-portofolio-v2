@@ -8,7 +8,7 @@ const Projects = () => {
     <>
       <section
         id="projects"
-        className="w-full px-4 pt-6 pb-8 mt-10 text-white bg-gray-900 font-pixel"
+        className="w-full px-5 py-16 text-white md:px-10 mb-14 font-pixel"
       >
         <div className="container mx-auto">
           <article>

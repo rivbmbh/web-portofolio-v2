@@ -18,7 +18,7 @@ const Avatar = () => {
          (max-width: 1024px) 320px,
          400px"
           alt="avatar"
-          className="max-w-full w-80 min-[1280px]:w-[400px]"
+          className="max-w-full w-80 xl:w-100"
           fetchPriority="high"
           decoding="async"
           onClick={() =>

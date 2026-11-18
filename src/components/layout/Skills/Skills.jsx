@@ -56,7 +56,7 @@ const Skills = () => {
       <section
         ref={containerRef}
         id="skills"
-        className="w-full gap-10 px-2 mt-5 mb-20 text-white font-pixel"
+        className="w-full px-5 py-16 text-white bg-gray-900 md:px-10 md:py-20 font-pixel"
       >
         <div className="container mx-auto">
           <div className="flex flex-col items-center justify-center w-full mb-5 sm:px-4 md:px-8">
