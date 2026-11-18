@@ -115,7 +115,8 @@ const Skills = () => {
                     data.percent,
                     data.imgSrc,
                     data.imgFullSrc,
-                    data.caption,
+                    data.captionID,
+                    data.captionEN,
                     data.gridStartPosition,
                   ),
                 )}
