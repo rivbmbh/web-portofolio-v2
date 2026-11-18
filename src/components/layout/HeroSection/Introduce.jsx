@@ -1,14 +1,12 @@
 const Introduce = () => {
   return (
-    <>
-      <div className="w-full mx-auto my-4 text-5xl font-bold md:text-6xl xs:my-2">
-        <p>Rivaldo</p>
-        <div className="items-center xs:text-end xs:flex xs:gap-4">
-          <p>Angelo </p>
-          <p>Bomboah</p>
-        </div>
-      </div>
-    </>
+    <h1 className="w-full mx-auto my-4 text-5xl font-bold md:text-6xl xs:my-2">
+      <span className="block">Rivaldo</span>
+      <span className="items-center xs:text-end xs:flex xs:gap-4">
+        <span>Angelo </span>
+        <span>Bomboah</span>
+      </span>
+    </h1>
   );
 };
 

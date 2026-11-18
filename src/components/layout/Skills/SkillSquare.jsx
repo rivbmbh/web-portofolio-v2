@@ -11,7 +11,6 @@ const SkillCircle = ({
   captionID = "",
   captionEN = "",
   strokeColor = "text-slate-600/60",
-  // gridStartPosition = "",
 }) => {
   const { isEnglish } = useLanguage();
   const caption = isEnglish ? captionEN : captionID;
@@ -33,13 +32,13 @@ const SkillCircle = ({
   }, [start, offset]);
 
   return (
-    <>
-      <div
-        className={` relative flex items-center justify-center-safe w-16 h-16 sm:w-18 sm:h-18 mx-auto`}
+    <div
+        className="relative flex items-center justify-center-safe w-16 h-16 sm:w-18 sm:h-18 mx-auto"
       >
         <svg
           className="w-full h-full transform -rotate-90 stroke-1 stroke-white text-slate-800"
           viewBox="0 0 36 36"
+          aria-hidden="true"
         >
           <circle
             className="fill-current"
@@ -66,16 +65,14 @@ const SkillCircle = ({
         </svg>
         <div className="absolute w-[36%] h-[36%] sm:w-[48%] sm:h-[48%] overflow-hidden">
           <img
-            rel="preload"
             src={imgSrc}
-            alt="icon"
-            className="object-contain rounded-sm"
+            alt={caption || (isEnglish ? "Skill icon" : "Ikon keahlian")}
+            className="object-contain rounded-sm cursor-pointer"
             onClick={() => openImage(imgFullSrc, caption)}
             loading="lazy"
           />
         </div>
-      </div>
-    </>
+    </div >
   );
 };
 
