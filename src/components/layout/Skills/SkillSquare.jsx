@@ -1,16 +1,20 @@
 import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { useImageFullView } from "../../common/Modal/ImageFullViewContext";
+import { useLanguage } from "../../common/Language/LanguageContext";
 
 const SkillCircle = ({
   start,
   percent,
   imgSrc,
   imgFullSrc,
-  caption = "",
-  strokeColor = "text-slate-500",
+  captionID = "",
+  captionEN = "",
+  strokeColor = "text-slate-600/60",
   // gridStartPosition = "",
 }) => {
+  const { isEnglish } = useLanguage();
+  const caption = isEnglish ? captionEN : captionID;
   const circleRef = useRef(null);
   const offset = 100 - percent;
   const { openImage } = useImageFullView();
@@ -34,18 +38,9 @@ const SkillCircle = ({
         className={` relative flex items-center justify-center-safe w-16 h-16 sm:w-18 sm:h-18 mx-auto`}
       >
         <svg
-          className="w-full h-full transform -rotate-90 text-slate-800"
+          className="w-full h-full transform -rotate-90 stroke-1 stroke-white text-slate-800"
           viewBox="0 0 36 36"
         >
-          {/* <defs>
-            <filter id="glow">
-              <feGaussianBlur stdDeviation="2" result="blur" />
-              <feMerge>
-                <feMergeNode in="blur" />
-                <feMergeNode in="SourceGraphic" />
-              </feMerge>
-            </filter>
-          </defs> */}
           <circle
             className="fill-current"
             stroke="currentColor"
@@ -74,7 +69,7 @@ const SkillCircle = ({
             rel="preload"
             src={imgSrc}
             alt="icon"
-            className="object-contain"
+            className="object-contain rounded-sm"
             onClick={() => openImage(imgFullSrc, caption)}
             loading="lazy"
           />

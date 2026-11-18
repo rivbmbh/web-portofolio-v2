@@ -3,55 +3,63 @@
     "percent": 75,
     "imgSrc": "arcgis",
     "imgFullSrc": "arcgis-large",
-    "caption": "Argis, mapping tool",
+    "captionEN": "ArcGIS, mapping tool",
+    "captionID": "ArcGIS, alat pemetaan",
     "gridStartPosition": "sm:col-start-2"
   },
   {
     "percent": 75,
     "imgSrc": "excel",
     "imgFullSrc": "excel-large",
-    "caption": "Microsoft Excel",
+    "captionEN": "Microsoft Excel",
+    "captionID": "Microsoft Excel",
     "gridStartPosition": "sm:col-start-4"
   },
   {
     "percent": 85,
     "imgSrc": "figma",
     "imgFullSrc": "figma-large",
-    "caption": "Figma, UI/UX design tool"
+    "captionEN": "Figma, UI/UX design tool",
+    "captionID": "Figma, alat desain UI/UX"
   },
   {
     "percent": 60,
     "imgSrc": "qgis",
     "imgFullSrc": "qgis-large",
-    "caption": "QGIS, mapping tool",
+    "captionEN": "QGIS, mapping tool",
+    "captionID": "QGIS, alat pemetaan",
     "gridStartPosition": "sm:col-start-3"
   },
   {
     "percent": 50,
     "imgSrc": "blender",
     "imgFullSrc": "blender-large",
-    "caption": "Blender, 3D modeling tool",
+    "captionEN": "Blender, 3D modeling tool",
+    "captionID": "Blender, alat pemodelan 3D",
     "gridStartPosition": "sm:col-start-4"
   },
   {
     "percent": 90,
     "imgSrc": "xd",
     "imgFullSrc": "xd-large",
-    "caption": "Adobe XD, UI/UX design tool",
+    "captionEN": "Adobe XD, UI/UX design tool",
+    "captionID": "Adobe XD, alat desain UI/UX",
     "gridStartPosition": "sm:col-start-3"
   },
   {
     "percent": 70,
     "imgSrc": "canva",
     "imgFullSrc": "canva-large",
-    "caption": "Canva, graphic design tool",
+    "captionEN": "Canva, graphic design tool",
+    "captionID": "Canva, alat desain grafis",
     "gridStartPosition": "sm:col-start-3"
   },
   {
     "percent": 60,
     "imgSrc": "ubuntu",
     "imgFullSrc": "ubuntu-large",
-    "caption": "Linux Ubuntu, operating system",
+    "captionEN": "Linux Ubuntu, operating system",
+    "captionID": "Linux Ubuntu, sistem operasi",
     "gridStartPosition": "sm:col-start-4"
   }
 ]

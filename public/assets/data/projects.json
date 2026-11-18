@@ -2,21 +2,24 @@
   {
     "projectName": "Web Hotel",
     "imageName": "web-hotel",
-    "description": "Web hotel dengan dua sistem pemesanan via denah hotel dengan dapat memilih nomor kamar atau dengan cara umum tapi dengan nomor kamar acak",
+    "descriptionID": "Web hotel dengan dua sistem pemesanan via denah hotel dengan dapat memilih nomor kamar atau dengan cara umum tapi dengan nomor kamar acak",
+    "descriptionEN": "A hotel website with two booking systems: via a hotel floor plan where you can choose your room number, or the standard way with a randomly assigned room number",
     "url": "https://exo-hotel.vercel.app/",
     "tech": "nextjs, tailwindcss, typescript, prisma, postgresql"
   },
   {
     "projectName": "Web Cek Followers IG",
     "imageName": "web-instacik",
-    "description": "Web cek followers maupun following di instagram untuk mengecek siapa yang kita follow dan tidak follback kita ataupun sebaliknya",
+    "descriptionID": "Web cek followers maupun following di instagram untuk mengecek siapa yang kita follow dan tidak follback kita ataupun sebaliknya",
+    "descriptionEN": "A website to check Instagram followers and following, to see who you follow that doesn't follow you back, or vice versa",
     "url": "https://instacik.vercel.app/",
     "tech": "vite, reactjs, tailwindcss"
   },
   {
     "projectName": "Web Kost",
     "imageName": "web-kost",
-    "description": "Web profile sebuah kos-kosan sederhana dengan data dummy belum diintergrasikan dengan payment gateaway",
+    "descriptionID": "Web profile sebuah kos-kosan sederhana dengan data dummy belum diintegrasikan dengan payment gateway",
+    "descriptionEN": "A simple boarding house profile website with dummy data, not yet integrated with a payment gateway",
     "url": "https://cozyclabat.vercel.app/",
     "tech": "vite, reactjs, tailwindcss"
   }

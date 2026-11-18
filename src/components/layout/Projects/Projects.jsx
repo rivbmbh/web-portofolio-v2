@@ -26,7 +26,9 @@ const Projects = () => {
                   key={index + data.imageName}
                   projectName={data.projectName}
                   imageName={data.imageName}
-                  description={data.description}
+                  description={
+                    isEnglish ? data.descriptionEN : data.descriptionID
+                  }
                   url={data.url}
                   technology={data.tech}
                 />

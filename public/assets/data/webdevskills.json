@@ -3,116 +3,133 @@
     "percent": 90,
     "imgSrc": "php",
     "imgFullSrc": "php-large",
-    "caption": "PHP, programming language"
+    "captionEN": "PHP, programming language",
+    "captionID": "PHP, bahasa pemrograman"
   },
   {
     "percent": 80,
     "imgSrc": "js",
     "imgFullSrc": "js-large",
-    "caption": "Javascript, programming language",
+    "captionEN": "JavaScript, programming language",
+    "captionID": "JavaScript, bahasa pemrograman",
     "gridStartPosition": "sm:col-start-2"
   },
   {
     "percent": 100,
     "imgSrc": "tailwindcss",
     "imgFullSrc": "tailwindcss-large",
-    "caption": "TailwindCSS, CSS framework",
+    "captionEN": "TailwindCSS, CSS framework",
+    "captionID": "TailwindCSS, framework CSS",
     "gridStartPosition": "sm:col-start-4"
   },
   {
     "percent": 100,
     "imgSrc": "bootstrap",
     "imgFullSrc": "bootstrap-large",
-    "caption": "Bootstrap, CSS framework"
+    "captionEN": "Bootstrap, CSS framework",
+    "captionID": "Bootstrap, framework CSS"
   },
   {
     "percent": 85,
     "imgSrc": "codeigniter",
     "imgFullSrc": "codeigniter-large",
-    "caption": "Codeigniter, PHP framework",
+    "captionEN": "CodeIgniter, PHP framework",
+    "captionID": "CodeIgniter, framework PHP",
     "gridStartPosition": "sm:col-start-3"
   },
   {
     "percent": 80,
     "imgSrc": "laravel",
     "imgFullSrc": "laravel-large",
-    "caption": "Laravel, PHP framework",
+    "captionEN": "Laravel, PHP framework",
+    "captionID": "Laravel, framework PHP",
     "gridStartPosition": "sm:col-start-4"
   },
   {
     "percent": 60,
     "imgSrc": "node-js",
     "imgFullSrc": "node-js-large",
-    "caption": "NodeJS, runtime javascript",
+    "captionEN": "NodeJS, JavaScript runtime",
+    "captionID": "NodeJS, runtime JavaScript",
     "gridStartPosition": "sm:col-start-2"
   },
   {
     "percent": 80,
     "imgSrc": "react",
     "imgFullSrc": "react-large",
-    "caption": "ReactJS, library javascript"
+    "captionEN": "ReactJS, JavaScript library",
+    "captionID": "ReactJS, library JavaScript"
   },
   {
     "percent": 90,
     "imgSrc": "mysql",
     "imgFullSrc": "mysql-large",
-    "caption": "MySQL, Database",
+    "captionEN": "MySQL, database",
+    "captionID": "MySQL, basis data",
     "gridStartPosition": "sm:col-start-1"
   },
   {
     "percent": 55,
     "imgSrc": "mongodb",
     "imgFullSrc": "mongodb-large",
-    "caption": "MonggoDB, Database",
+    "captionEN": "MongoDB, database",
+    "captionID": "MongoDB, basis data",
     "gridStartPosition": "sm:col-start-4"
   },
   {
     "percent": 60,
     "imgSrc": "nextjs",
     "imgFullSrc": "nextjs-large",
-    "caption": "NextJS, frontend web framework",
+    "captionEN": "NextJS, frontend web framework",
+    "captionID": "NextJS, framework web frontend",
     "gridStartPosition": "sm:col-start-4"
   },
   {
     "percent": 100,
     "imgSrc": "html",
     "imgFullSrc": "html-large",
-    "caption": "HTML5, Hypertext Markup Language for build structure website",
+    "captionEN": "HTML5, Hypertext Markup Language for building website structure",
+    "captionID": "HTML5, Hypertext Markup Language untuk membangun struktur website",
     "gridStartPosition": "sm:col-start-4"
   },
   {
     "percent": 100,
     "imgSrc": "css",
     "imgFullSrc": "css-large",
-    "caption": "CSS3, Cascading Style Sheet for styling UI website",
+    "captionEN": "CSS3, Cascading Style Sheets for styling website UI",
+    "captionID": "CSS3, Cascading Style Sheets untuk menata tampilan UI website",
     "gridStartPosition": "sm:col-start-4"
   },
   {
     "percent": 50,
     "imgSrc": "postgresql",
     "imgFullSrc": "postgresql-large",
-    "caption": "PostgreSQL, database",
+    "captionEN": "PostgreSQL, database",
+    "captionID": "PostgreSQL, basis data",
     "gridStartPosition": "sm:col-start-4"
   },
   {
     "percent": 70,
     "imgSrc": "google-antigravity",
     "imgFullSrc": "google-antigravity-large",
-    "caption": "Antigravity, text editor with google gemini AI for build website",
+    "captionEN": "Antigravity, text editor with Google Gemini AI for building websites",
+    "captionID": "Antigravity, text editor dengan Google Gemini AI untuk membangun website",
     "gridStartPosition": "sm:col-start-4"
   },
   {
     "percent": 100,
     "imgSrc": "vsc",
     "imgFullSrc": "vsc-large",
-    "caption": "Visual Studio Code, text editor for build website",
+    "captionEN": "Visual Studio Code, text editor for building websites",
+    "captionID": "Visual Studio Code, text editor untuk membangun website",
     "gridStartPosition": "sm:col-start-4"
   },
   {
     "percent": 60,
     "imgSrc": "express",
     "imgFullSrc": "express-large",
-    "caption": "Visual Studio Code, text editor for build website",
+    "captionEN": "ExpressJS, NodeJS framework",
+    "captionID": "ExpressJS, framework NodeJS",
     "gridStartPosition": "sm:col-start-4"
   }
 ]

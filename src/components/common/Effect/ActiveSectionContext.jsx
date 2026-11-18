@@ -7,7 +7,7 @@ export const ActiveSectionProvider = ({ children }) => {
   const [activeSection, setActiveSection] = useState("home");
 
   useEffect(() => {
-    const sectionIds = ["home", "about", "skills", "projects"];
+    const sectionIds = ["home", "about", "certificates", "skills", "projects"];
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
@@ -16,7 +16,7 @@ export const ActiveSectionProvider = ({ children }) => {
           }
         });
       },
-      { threshold: 0.5 }
+      { threshold: 0.5 },
     );
 
     sectionIds.forEach((id) => {

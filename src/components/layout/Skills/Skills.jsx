@@ -16,7 +16,8 @@ const Skills = () => {
     percent,
     imgSrc,
     imgFullSrc,
-    caption,
+    captionID,
+    captionEN,
     gridStartPosition,
   ) {
     if (gridStartPosition === undefined || gridStartPosition === null) {
@@ -29,7 +30,8 @@ const Skills = () => {
         percent={percent}
         imgSrc={`/assets/icons-tools-programming-language/${imgSrc}.avif`}
         imgFullSrc={`/assets/icons-tools-programming-language/${imgFullSrc}.avif`}
-        caption={caption}
+        captionID={captionID}
+        captionEN={captionEN}
         // gridStartPosition={gridStartPosition}
       />
     );
@@ -56,8 +58,15 @@ const Skills = () => {
       <section
         ref={containerRef}
         id="skills"
-        className="w-full px-5 py-16 text-white bg-gray-900 md:px-10 md:py-20 font-pixel"
+        className="relative w-full px-5 py-16 text-white bg-gray-900 md:px-10 md:py-20 font-pixel"
       >
+        <p className="absolute text-sm bottom-5 right-5">
+          *
+          {isEnglish
+            ? "Ring fullness indicates mastery"
+            : "Semakin penuh lingkaran, semakin dikuasai"}
+          ...
+        </p>
         <div className="container mx-auto">
           <div className="flex flex-col items-center justify-center w-full mb-5 sm:px-4 md:px-8">
             <p className="mb-3 text-3xl font-bold sm:text-4xl text-center min-[770px]:text-start ">
@@ -69,8 +78,8 @@ const Skills = () => {
                 : "Berikut Keahlian saya yang terbagi dua bagian dengan menyertai software, applikasi serta bahasa pemograman yang sudah saya rasa cukup kuasai"}
             </p>
           </div>
-          <article className="flex flex-col justify-between min-[770px]:gap-2">
-            <div className="flex flex-col items-center justify-center w-full">
+          <article className="flex flex-col justify-between min-[770px]:gap-3 py-5">
+            <div className="flex flex-col items-center justify-center w-full mt-8 mb-8">
               <h2 className="mb-10 text-2xl font-semibold sm:text-3xl text-center min-[770px]:text-start">
                 *{" "}
                 {isEnglish
@@ -86,7 +95,8 @@ const Skills = () => {
                     data.percent,
                     data.imgSrc,
                     data.imgFullSrc,
-                    data.caption,
+                    data.captionID,
+                    data.captionEN,
                     data.gridStartPosition,
                   ),
                 )}
