@@ -63,12 +63,12 @@ const NavMobile = ({ isOpenResume, setIsOpenResume }) => {
               transition={{ duration: 0.2 }}
               className={` bg-gray-700/50 backdrop-blur-sm shadow-md absolute right-0 top-[59px] flex flex-col gap-y-4 w-44 py-6 px-4 items-stretch text-md text-white`}
             >
-              {sections.map((section) => (
+              {sections.map((section, index) => (
                 <button
-                  key={section}
-                  onClick={() => scrollTo(section)}
+                  key={index + section}
+                  onClick={() => scrollTo(sectionEN[index])}
                   className={`w-full capitalize text-start ${effectNav({
-                    active: activeSection === section,
+                    active: activeSection === sectionEN[index],
                   })}`}
                 >
                   {section}

@@ -27,9 +27,9 @@ const NavDekstop = ({ isOpenResume, setIsOpenResume }) => {
         {sections.map((section, index) => (
           <button
             key={index + section}
-            onClick={() => scrollTo(section)}
-            className={`capitalize  ${effectNav({
-              active: activeSection === section,
+            onClick={() => scrollTo(sectionEN[index])}
+            className={`capitalize ${effectNav({
+              active: activeSection === sectionEN[index],
             })}`}
           >
             {section}
