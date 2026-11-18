@@ -39,4 +39,5 @@ export const ActiveSectionProvider = ({ children }) => {
   );
 };
 
+// eslint-disable-next-line react-refresh/only-export-components
 export const useActiveSection = () => useContext(ActiveSectionContext);

@@ -18,7 +18,6 @@ const Personal = ({ isSmallScreen }) => {
         <div className="flex flex-wrap items-center w-full gap-5 mt-14">
           <HandPoint isSmallScreen={isSmallScreen} />
           <ButtonConnect
-            url="#"
             name={title}
             effect="active:scale-105 active:-rotate-3 transition-all ease-in-out duration-200 active:bg-emerald-700 hover:bg-emerald-700 focus:scale-105 focus:-rotate-3 focus:bg-emerald-700 "
           />

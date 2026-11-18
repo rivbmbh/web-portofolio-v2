@@ -28,28 +28,27 @@ const FooterContent = () => {
   ];
 
   return (
-    <>
-      <div className="flex items-center justify-between px-4">
-        <div className="text-base font-bold leading-tight">
-          <h3>Rivaldo Angelo Bomboah</h3>
-        </div>
+        <div className="flex items-center justify-between px-4">
+          <div className="text-base font-bold leading-tight">
+            <p className="text-lg">Rivaldo Angelo Bomboah</p>
+          </div>
 
-        {/* social media links */}
-        <div className="flex flex-col items-center justify-center gap-4 xs:flex-row">
-          {medsosLinksProfile.map((data, index) => (
-            <a
-              key={data.label + index}
-              target="_blank"
-              href={data.href}
-              aria-label={`${data.label} Profile`}
-            >
-              <FontAwesomeIcon icon={data.icon} className={iconSosmed()} />
-            </a>
-          ))}
-        </div>
+          {/* social media links */}
+          <div className="flex flex-col items-center justify-center gap-4 xs:flex-row">
+            {medsosLinksProfile.map((data, index) => (
+              <a
+                key={data.label + index}
+                target="_blank"
+                rel="noopener noreferrer"
+                href={data.href}
+                aria-label={`${data.label} Profile Rivaldo`}
+              >
+                <FontAwesomeIcon icon={data.icon} className={iconSosmed()} />
+              </a>
+            ))}
+          </div>
       </div>
-    </>
-  );
+      );
 };
 
-export default FooterContent;
+      export default FooterContent;
