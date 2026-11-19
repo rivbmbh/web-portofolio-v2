@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { effectNav } from "../../../js/style";
+import { effectNav, hamburgerLine } from "../../../js/style";
 import { useActiveSection } from "../../common/Effect/ActiveSectionContext";
 import { motion, AnimatePresence } from "framer-motion";
 import ButtonResume from "../../common/Button/ButtonResume";
@@ -27,31 +27,32 @@ const NavMobile = ({ isOpenResume, setIsOpenResume }) => {
   }
 
   return (
-        <div className="md:hidden relative mt-1 md:mt-0">
-          <div className="flex items-center justify-center gap-5">
-            <ChooseLanguage />
-            {/* hamburger button (mobile) */}
-            <button
-              type="button"
-              aria-label="Buka navigasi menu"
-              aria-expanded={isOpenNavMenu}
-              className="bg-transparent border-none p-1 cursor-pointer focus:outline-none"
-              onClick={handleOpenNavMenu}
-            >
-              <span
-                className={`transition duration-300 ease-in-out w-[31px] h-[2.5px] my-2 block dark:bg-white ${isOpenNavMenu ? "origin-top-left rotate-45" : ""
-                  }`}
-              ></span>
-              <span
-                className={`transition duration-300 ease-in-out w-[31px] h-[2.5px] my-2 block dark:bg-white ${isOpenNavMenu ? "scale-0" : ""
-                  }`}
-              ></span>
-              <span
-                className={`transition duration-300 ease-in-out w-[31px] h-[2.5px] my-2 block dark:bg-white ${isOpenNavMenu ? "origin-bottom-left -rotate-45" : ""
-                  }`}
-              ></span>
-            </button>
-          </div>
+    <div className="relative mt-1 md:hidden md:mt-0">
+      <div className="flex items-center justify-center gap-5">
+        <ChooseLanguage />
+        {/* hamburger button (mobile) */}
+        <button
+          type="button"
+          aria-label="Buka navigasi menu"
+          aria-expanded={isOpenNavMenu}
+          className="p-1 bg-transparent border-none cursor-pointer focus:outline-none"
+          onClick={handleOpenNavMenu}
+        >
+          <span
+            className={`${hamburgerLine()} ${
+              isOpenNavMenu ? "origin-top-left rotate-45" : ""
+            }`}
+          ></span>
+          <span
+            className={`${hamburgerLine()} ${isOpenNavMenu ? "scale-0" : ""}`}
+          ></span>
+          <span
+            className={`${hamburgerLine()} ${
+              isOpenNavMenu ? "origin-bottom-left -rotate-45" : ""
+            }`}
+          ></span>
+        </button>
+      </div>
 
       {/* nav menu mobile */}
       <AnimatePresence>
@@ -74,9 +75,11 @@ const NavMobile = ({ isOpenResume, setIsOpenResume }) => {
                   scrollTo(sectionEN[index]);
                   setIsOpenNavMenu(false);
                 }}
-                className={`w-full capitalize text-start cursor-pointer ${effectNav({
-                  active: activeSection === sectionEN[index],
-                })}`}
+                className={`w-full capitalize text-start cursor-pointer ${effectNav(
+                  {
+                    active: activeSection === sectionEN[index],
+                  },
+                )}`}
               >
                 {section}
               </a>
@@ -92,7 +95,7 @@ const NavMobile = ({ isOpenResume, setIsOpenResume }) => {
           </motion.nav>
         )}
       </AnimatePresence>
-    </div >
+    </div>
   );
 };
 

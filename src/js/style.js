@@ -9,7 +9,7 @@ const hamburgerLine = tv({
     "h-[2.5px]",
     "my-2",
     "block",
-    "dark:bg-white",
+    "bg-white",
   ],
 });
 
