@@ -30,17 +30,17 @@ const ScrollBackToTop = () => {
   }, []);
 
   return (
-          type="button"
-          aria-label="Kembali ke bagian atas halaman"
-          className={`absolute flex items-center justify-center rounded-full w-14 h-14 right-3.5 cursor-pointer border-none ${isBottom ? "bottom-52 min-[320px]:bottom-20" : "bottom-1"
-      } bg-gray-800/30 animate-bounce backdrop-blur-sm transition-all duration-500 ease-in-out active:bg-gray-700/60 hover:bg-gray-700/60`}
+    <button
+      type="button"
+      ariaLabel="Kembali ke bagian atas halaman"
+      className={`absolute flex items-center justify-center rounded-full w-14 h-14 right-3.5 cursor-pointer border-none ${isBottom ? "xs:bottom-20" : "bottom-1"} bg-gray-800/30 animate-bounce backdrop-blur-sm transition-all duration-500 ease-in-out active:bg-gray-700/60 hover:bg-gray-700/60`}
       onClick={handleClickToHome}
     >
       <FontAwesomeIcon
         icon={faAngleUp}
         className="text-4xl text-center text-white"
       />
-    </button >
+    </button>
   );
 };
 
